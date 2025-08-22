@@ -12,14 +12,7 @@ const Profile = () => {
             <div className="profile">
                 <img src={grass} alt="" id="grass1" />
                 <img src={grass} alt="" id="grass2" />
-                <img src={thoranam} alt="" id="thoranam0" />
-                <img src={thoranam} alt="" id="thoranam1" />
-                <img src={thoranam} alt="" id="thoranam2" />
-                <img src={thoranam} alt="" id="thoranam3" />
-                <img src={thoranam} alt="" id="thoranam4" />
-                <img src={thoranam} alt="" id="thoranam5" />
-                <img src={thoranam} alt="" id="thoranam6" />
-                <img src={thoranam} alt="" id="thoranam7" />
+            
                 <div className="profile-left">
                     <h1>அன்பின் அரவணைப்பு அறக்கட்டளை</h1>
                     <p>
