@@ -1,0 +1,80 @@
+.details {
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 25% 5%;
+    background-color: rgb(185, 217, 244);
+}
+
+.details > .details-left {
+    position: relative;
+    /* border: 2px solid green; */
+    flex-basis: 50%;
+    height: auto;
+}
+.details > .details-left > #ribbon {
+    position: absolute;
+    height: 320px;
+    top: -138px;
+    left: 180px;
+    /* z-index: 0; */
+}
+.details > .details-left > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 1;
+    color: rgb(209, 169, 60);
+    /* margin-bottom: 20px; */
+    text-shadow: 0px 0px 5px black;
+    position: relative;
+}
+.details > .details-left > table {
+    border: 5px ridge rgb(1, 91, 181);
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    /* height: 100%; */
+}
+.details > .details-left > table > tbody > tr > td {
+    width: 50%;
+    border: 1px ridge rgb(1, 91, 181);
+    padding: 5px;
+}
+
+.details > .details-left > table > tbody > tr > td > ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.details > .details-right {
+    /* border: 2px solid blue; */
+    flex-basis: 50%;
+    height: auto;
+    /* padding: 2%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details > .details-right > .images {
+    /* background-color: red; */
+    height: 90%;
+    width: 100%;
+    /* padding: 5%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+.details > .details-right > .images > img {
+    height: 200px;
+}
+.details > .details-right > .images > .pic {
+    box-shadow: 5px 5px 5px rgb(42, 41, 41);
+
+    border-radius: 10%;
+}

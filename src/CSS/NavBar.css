@@ -1,0 +1,81 @@
+nav {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to right, white, rgb(1, 91, 181), rgb(1, 91, 181));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > .nav-left {
+    margin-left: 20px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > .nav-left > h1 {
+    font-family: "Mukta_Malar_bold", sans-serif;
+    color: rgb(1, 91, 181);
+}
+
+nav > .nav-left > img {
+    height: 60px;
+    /* border: 2px solid rgb(214, 45, 111); */
+    border-radius: 50%;
+}
+
+nav > .nav-right {
+    margin-right: 20px;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+nav > .nav-right > p {
+    cursor: pointer;
+    font-family: "NotoSans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    /* text-transform: uppercase; */
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+    nav > .nav-left,
+    nav > .nav-right {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    nav > .nav-left {
+        flex-wrap: wrap;
+    }
+    nav > .nav-right {
+        flex-wrap: wrap;
+    }
+    nav > .nav-left > h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    nav > .nav-left > img {
+        height: 40px;
+    }
+    nav > .nav-right > p {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}

@@ -1,0 +1,71 @@
+.vision {
+    /* border: 2px solid red; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 50px;
+    background-color: rgb(185, 217, 244);
+    position: relative;
+}
+.vision > #ribbon {
+    position: absolute;
+    height: 300px;
+    top: -50px;
+}
+.vision > h1 {
+    color: rgb(209, 169, 60);
+    /* margin-bottom: 20px; */
+    text-shadow: 0px 0px 5px black;
+    z-index: 1;
+}
+.vision > .vision-notes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.vision > .vision-notes > p {
+    font-family: "Mukta_Malar_medium";
+    font-size: larger;
+    /* font-weight: bold; */
+}
+
+.vision-pics {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 20s linear infinite;
+}
+
+.scroll-track img {
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 10px rgb(62, 62, 62) ; */
+}
+
+/* Pause on hover */
+.vision-pics:hover .scroll-track {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* shift full width of first set */
+    }
+}
