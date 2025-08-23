@@ -1,4 +1,90 @@
+nav > .nav-left > img {
+    filter: drop-shadow(0px 0px 10px white);
+    height: 100px;
+}
 nav {
+    /* border: 2px solid red; */
+    width: auto;
+    background-color: rgb(1, 91, 181);
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+nav > .nav-left {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav > .nav-left > h1 {
+    font-family: "Mukta_Malar_bold";
+    color: white;
+    font-size: 1.2rem;
+}
+nav > .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav > .nav-right > p {
+    color: white;
+    font-family: "NotoSans";
+    font-weight: bold;
+    /* font-size: 1rem; */
+}
+@media (width >= 40em) {
+}
+@media (width >= 60em) {
+    nav {
+        height: 15vh;
+        background-color: rgb(1, 91, 181);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        /* border: 2px solid rgb(1, 91, 181); */
+    }
+    nav > .nav-left {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    nav > .nav-left > h1 {
+        font-size: 1.5rem;
+        color: white;
+        font-family: "Mukta_Malar_bold";
+    }
+    nav > .nav-right {
+        /* flex: 3; */
+        /* border: 2px solid white; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        /* color: white; */
+        font-family: "NotoSans";
+        font-weight: bold;
+    }
+    nav > .nav-right > p {
+        color: white;
+        font-size: 1.1rem;
+    }
+    nav > .nav-left > img {
+        height: 4rem;
+        filter: drop-shadow(0px 0px 8px white);
+    }
+}
+/* nav {
     height: 10vh;
     width: 100vw;
     position: fixed;
@@ -9,43 +95,38 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 nav > .nav-left {
     margin-left: 20px;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
 }
-
 nav > .nav-left > h1 {
     font-family: "Mukta_Malar_bold", sans-serif;
     color: rgb(1, 91, 181);
 }
-
 nav > .nav-left > img {
     height: 60px;
-    /* border: 2px solid rgb(214, 45, 111); */
+    border: 2px solid rgb(214, 45, 111);
     border-radius: 50%;
 }
-
 nav > .nav-right {
     margin-right: 20px;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
 }
-
 nav > .nav-right > p {
     cursor: pointer;
     font-family: "NotoSans", sans-serif;
     color: white;
     font-weight: bold;
     font-size: medium;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 @media (max-width: 600px) {
     nav {
@@ -78,4 +159,4 @@ nav > .nav-right > p {
         font-size: 16px;
         padding: 5px 8px;
     }
-}
+} */

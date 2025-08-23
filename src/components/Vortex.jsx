@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 
 const Vortex = ({
     particleCount = 50,
-    backgroundColor = "rgb(185, 217, 244)",
+    backgroundColor = "white",
     colors = ["#f228abff", "#00ccff"], // green-blue glow
 }) => {
     const canvasRef = useRef(null)

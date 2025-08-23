@@ -10,16 +10,8 @@
     background-color: rgb(185, 217, 244);
     position: relative;
 }
-.vision > #ribbon {
-    position: absolute;
-    height: 300px;
-    top: -50px;
-}
-.vision > h1 {
-    color: rgb(209, 169, 60);
-    /* margin-bottom: 20px; */
-    text-shadow: 0px 0px 5px black;
-    z-index: 1;
+.vision > img{
+    height: 100px;
 }
 .vision > .vision-notes {
     margin-top: 20px;

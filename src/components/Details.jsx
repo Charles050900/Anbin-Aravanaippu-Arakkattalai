@@ -4,14 +4,13 @@ import pic1 from "../assets/Anbin Aravanaippu Arakkattalai Logo.png"
 import pic2 from "../assets/Group.jpg"
 import pic3 from "../assets/About.jpg"
 import pic4 from "../assets/Profile.jpg"
-import ribbon from '../assets/Ribbon.png'
+import title from "../assets/Profile.png"
 
 const Details = () => {
     return (
         <div className="details">
             <div className="details-left">
-                <h1>Profile</h1>
-                <img src={ribbon} alt="" id="ribbon" />
+                <img src={title} alt="" />
                 <table cellSpacing={5}>
                     <tbody>
                         <tr>

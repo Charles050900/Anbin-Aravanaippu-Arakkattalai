@@ -9,13 +9,14 @@ import vision7 from "../assets/vision7.jpg"
 import vision8 from "../assets/vision8.jpg"
 import vision9 from "../assets/vision9.jpg"
 import vision10 from "../assets/vision10.jpg"
-import ribbon from "../assets/Ribbon.png"
+// import ribbon from "../assets/Ribbon.png"
+import title from "../assets/Vision.png"
 
 const Vision = () => {
     return (
         <div className="vision">
-            <h1>Vision</h1>
-            <img src={ribbon} alt="" id="ribbon" />
+            {/* <h1>Vision</h1> */}
+            <img src={title} alt="" />
             <div className="vision-notes">
                 <p>Everyone should have access to everything and everyone should live equally.</p>
                 <p>அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>

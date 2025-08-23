@@ -5,17 +5,15 @@ import Details from "./Details"
 import Vision from "./Vision"
 import Mission from "./Mission"
 
-
-
 const Home = () => {
     return (
         <>
             <NavBar />
             <Profile />
             <About />
-            <Details />
-            <Vision />
-            <Mission/>
+            {/* <Details /> */}
+            {/* <Vision /> */}
+            {/* <Mission /> */}
         </>
     )
 }

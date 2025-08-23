@@ -2,13 +2,14 @@ import React from "react"
 import "../CSS/Mission.css"
 import pic1 from "../assets/mission1.jpg"
 import pic2 from "../assets/mission2.jpg"
-import ribbon from "../assets/Ribbon.png"
+// import ribbon from "../assets/Ribbon.png"
+import title from "../assets/Mission.png"
 
 const Mission = () => {
     return (
         <div className="mission">
-            <h1>Mission</h1>
-            <img src={ribbon} alt="" id="ribbon" />
+            {/* <h1>Mission</h1> */}
+            <img src={title} alt="" />
             <div className="mission-notes1">
                 <div className="mission-notes1-left">
                     <ol>

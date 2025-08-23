@@ -10,9 +10,9 @@ const Profile = () => {
         <>
             <Vortex particleCount={50} colors={["#f228abff", "#00ccff"]} speedFactor={0.02} />
             <div className="profile">
-                <img src={grass} alt="" id="grass1" />
-                <img src={grass} alt="" id="grass2" />
-            
+                {/* <img src={grass} alt="" id="grass1" /> */}
+                {/* <img src={grass} alt="" id="grass2" /> */}
+
                 <div className="profile-left">
                     <h1>அன்பின் அரவணைப்பு அறக்கட்டளை</h1>
                     <p>

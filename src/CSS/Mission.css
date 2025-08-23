@@ -9,17 +9,8 @@
     background-color: rgb(185, 217, 244);
     position: relative;
 }
-.mission > #ribbon {
-    position: absolute;
-    height: 320px;
-    top: -107px;
-}
-.mission > h1 {
-    color: rgb(209, 169, 60);
-    /* margin-bottom: 20px; */
-    text-shadow: 0px 0px 5px black;
-    z-index: 1;
-    margin-bottom: 20px;
+.mission > img {
+    height: 100px;
 }
 
 .mission > .mission-notes1 {

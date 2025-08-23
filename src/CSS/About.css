@@ -1,14 +1,75 @@
 .about {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.about > .about-right {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem;
+    /* flex: 1; */
+}
+.about > .about-right > #p1 {
+    text-align: justify;
+    font-family: "NotoSans";
+    line-height: 1.7rem;
+}
+
+.about > .about-right > #p2 {
+    text-align: justify;
+    font-family: "Mukta_Malar_medium";
+    line-height: 1.7rem;
+}
+
+.about > .about-right > img {
+    height: 70px;
+}
+.about > .about-left {
+    /* flex: 1; */
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.about > .about-left > img {
+    max-width: 100%;
+    /* height: 200px; */
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px black;
+}
+
+@media (width >= 60em) {
+    .about {
+        /* border: 2px solid red; */
+        padding: 0rem 5rem;
+    }
+
+    .about > .about-right {
+        /* border: 2px solid; */
+        flex: 1;
+        flex-basis: 50%;
+    }
+    .about > .about-right > img {
+        height: 100px;
+    }
+}
+/* .about {
     height: 70vh;
-    /* border: 2px solid rebeccapurple; */
+    border: 2px solid rebeccapurple;
     display: flex;
     padding: 5%;
     position: relative;
     background-color: rgb(185, 217, 244);
 }
-
 .about > .about-right {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     flex-basis: 50%;
     padding: 20px;
     display: flex;
@@ -19,17 +80,9 @@
 }
 .about > .about-right > img {
     position: absolute;
-    height: 320px;
+    height: 100px;
     top: -60px;
 }
-
-.about > .about-right > h1 {
-    z-index: 1;
-    color: rgb(209, 169, 60);
-    margin-bottom: 25px;
-    text-shadow: 0px 0px 5px black;
-}
-
 .about > .about-right > p {
     text-align: justify;
 }
@@ -41,10 +94,9 @@
 .about > .about-right > #p2 {
     font-family: "Mukta_Malar_medium";
 }
-
 .about > .about-left {
     flex-basis: 50%;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,14 +106,13 @@
     border-radius: 20px;
     box-shadow: 10px 10px 2px rgb(1, 91, 181);
 }
-
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
         height: auto;
     }
     .about > .about-left,
-    .about > .about-right {
+    .about >4 .about-right {
         flex-basis: 100%;
         text-align: center;
     }
@@ -69,4 +120,4 @@
         width: 90%;
         height: auto;
     }
-}
+} */
