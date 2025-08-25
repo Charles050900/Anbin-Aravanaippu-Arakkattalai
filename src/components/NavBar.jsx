@@ -11,7 +11,7 @@ const NavBar = () => {
             <Vortex particleCount={50} colors={["#f228abff", "#0059ffff"]} speedFactor={0.02} />
             <div className="container-fluid">
                 {/* Use a flex container to align the image and text */}
-                <div className="navbar-brand d-flex  align-items-center gap-2">
+                <div className="navbar-brand d-flex flex-column align-items-center gap-2">
                     <img src={logo} alt="Logo" height={50} />
                     <div className="d-flex flex-column">
                         <p className="mb-0 fs-4 flex-grow-1 trust-name">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
