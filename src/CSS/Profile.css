@@ -1,124 +1,29 @@
-.profile {
-    /* border: 2px solid red; */
-    height: calc(100vh - 30vh);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile > .profile-left {
-    /* border: 2px solid black; */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    /* flex-wrap: wrap; */
-    /* height: 50%; */
-}
-.profile > .profile-left > h1 {
+.carousel-heading {
     color: rgb(1, 91, 181);
-    font-size: 1.5rem;
-    text-align: center;
     font-family: "Mukta_Malar_bold";
+    font-size: 40px;
+    backdrop-filter: blur(2px);
 }
-.profile > .profile-left > p {
+
+.carousel-content {
     color: rgb(1, 91, 181);
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 2rem;
-    font-family: "Multa_Malar_medium";
+    font-family: "Mukta_Malar_bold";
+    font-size: 20px;
+    backdrop-filter: blur(20px);
 }
-.profile > .profile-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    /* border: 2px solid blue; */
-    /* height: 50%; */
-}
-.profile > .profile-right > img {
-    /* border: 2px solid red; */
-    height: 250px;
+/* Carousel caption floating effect */
+.carousel-caption h3,
+.carousel-caption p {
+    animation: floatUp 1.2s ease-in-out forwards;
 }
 
-@media (width >= 60em) {
-    .profile {
-        /* border: 2px solid red; */
-        height: calc(100vh - 15vh);
-        flex-direction: row;
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    .profile > .profile-left {
-        /* border: 2px solid black; */
-        gap: 60px;
-    }
-    .profile > .profile-left > h1 {
-        font-size: 2.5rem;
-        background: -webkit-linear-gradient(rgb(2, 33, 65), rgb(0, 102, 204), rgb(2, 33, 65));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        /* border: 2px solid; */
-        text-shadow: 0px 0px 50px rgb(1, 91, 181);
-    }
-    .profile > .profile-left > p {
-        font-size: 1.6rem;
-        line-height: 3rem;
-        font-family: "Mukta_Malar_bold";
-    }
-
-    .profile > .profile-right > img {
-        /* border: 2px solid red; */
-        height: 500px;
-        /* filter: drop-shadow(0px 20px px black); */
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-
-/*
-.profile {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border-bottom: 5px solid rgb(1, 91, 181);
-}
-
-.profile-left {
-    width: 100%;
-    text-align: center;
-}
-
-.profile-left h1 {
-    font-family: "Mukta_Malar_bold", sans-serif;
-    font-size: 28px;
-    color: rgb(1, 91, 181);
-    text-shadow: 1px 1px 1px black;
-    margin-bottom: 10px;
-}
-
-.profile-left p {
-    font-family: "Mukta_Malar_medium", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(1, 91, 181);
-}
-
-.profile-right {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-right img {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-    filter: drop-shadow(0px 10px 5px black);
-} */
