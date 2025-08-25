@@ -29,7 +29,7 @@ const NavBar = () => {
             <div className="collapse navbar-collapse me-3" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Home</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Hom</p>
                     </li>
                     <li className="nav-item">
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">About</p>
