@@ -1,16 +1,40 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import about_image from "../assets/About.jpg"
 import "../CSS/About.css"
-// import ribbon from '../assets/Ribbon.png'
 import title from "../assets/About.png"
 
 const About = () => {
+    const leftRef = useRef(null)
+    const rightRef = useRef(null)
+
+    const [leftVisible, setLeftVisible] = useState(false)
+    const [rightVisible, setRightVisible] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight
+
+            // Left element visibility
+            const leftTop = leftRef.current.getBoundingClientRect().top
+            if (leftTop < windowHeight - 50) setLeftVisible(true)
+
+            // Right element visibility
+            const rightTop = rightRef.current.getBoundingClientRect().top
+            if (rightTop < windowHeight - 50) setRightVisible(true)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        handleScroll() // trigger on load
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
+
     return (
         <div className="about">
-            <div className="about-left">
+            <div ref={leftRef} className={`about-left floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={about_image} alt="" />
             </div>
-            <div className="about-right">
+            <div ref={rightRef} className={`about-right floating-up ${rightVisible ? "visible" : ""}`}>
                 <img src={title} alt="" />
                 <p id="p2">
                     அன்பின் அரவணைப்பு அறக்கட்டளை நிர்வாக அறங்காவலர் திரு.பொம்பாய் அவர்களால் 28/10/2020 அன்று ஏகனாபுரம் கிராமம், காஞ்சிபுரம் மாவட்டத்தில் நிறுவப்பட்டுள்ளது. இதன் நோக்கம் நலிந்த
@@ -26,3 +50,4 @@ const About = () => {
 }
 
 export default About
+    
