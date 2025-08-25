@@ -9,7 +9,7 @@
     color: rgb(1, 91, 181);
     font-family: "Mukta_Malar_bold";
     font-size: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(2px);
 }
 /* Carousel caption floating effect */
 .carousel-caption h3,
@@ -27,5 +27,3 @@
         transform: translateY(0);
     }
 }
-
-

@@ -4,7 +4,7 @@
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(87, 168, 249),white,rgb(87, 168, 249));
+    background: linear-gradient(to bottom, rgb(87, 168, 249),white,white,white,white,rgb(87, 168, 249));
 }
 .about > .about-right {
     /* border: 2px solid black; */
