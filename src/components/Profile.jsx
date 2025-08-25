@@ -1,31 +1,33 @@
-import React from "react"
-import "../CSS/Profile.css"
-import Vortex from "./Vortex"
-import group_pic from "../assets/Group Pic.png"
-import grass from "../assets/grass.png"
-import thoranam from "../assets/thoranam.png"
+import Carousel from "react-bootstrap/Carousel"
+// import ExampleCarouselImage from "components/ExampleCarouselImage"
+import CarouselImage1 from "../assets/carousel-1.jpg"
 
-const Profile = () => {
+function CarouselFadeExample() {
     return (
-        <>
-            <Vortex particleCount={50} colors={["#f228abff", "#00ccff"]} speedFactor={0.02} />
-            <div className="profile">
-                {/* <img src={grass} alt="" id="grass1" /> */}
-                {/* <img src={grass} alt="" id="grass2" /> */}
-
-                <div className="profile-left">
-                    <h1>அன்பின் அரவணைப்பு அறக்கட்டளை</h1>
-                    <p>
-                        அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், <br />
-                        அனைவரும் சம நிலையில் வாழ வேண்டும்.
-                    </p>
-                </div>
-                <div className="profile-right">
-                    <img src={group_pic} alt="" />
-                </div>
-            </div>
-        </>
+        <Carousel fade>
+            <Carousel.Item>
+                <img className="d-block w-100" src={CarouselImage1} style={{ height: "90vh", objectFit: "cover" }} />
+                <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={CarouselImage1} style={{ height: "90vh", objectFit: "cover" }} />
+                <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={CarouselImage1} style={{ height: "90vh", objectFit: "cover" }} />
+                <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
     )
 }
 
-export default Profile
+export default CarouselFadeExample

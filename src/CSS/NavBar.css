@@ -1,4 +1,22 @@
-nav {
+.trust-name {
+    color: rgb(1, 91, 181);
+    font-family: "Mukta_Malar_bold";
+}
+
+.collapse > ul > li > p {
+    color: rgb(1, 91, 181);
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(1, 91, 181);
+        border-radius: 40px;
+    }
+}
+
+/* nav {
     width: 100%;
     background-color: rgb(1, 91, 181);
     height: 15vh;
@@ -43,13 +61,13 @@ nav > .nav-right > p:hover {
     color: #ffcc00;
 }
 
-/* Hamburger Button */
+Hamburger Button
 .menu-toggle {
     display: none;
     cursor: pointer;
 }
 
-/* 📱 Mobile Styles */
+📱 Mobile Styles
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -77,4 +95,4 @@ nav > .nav-right > p:hover {
     nav > .nav-right.open {
         display: flex;
     }
-}
+} */

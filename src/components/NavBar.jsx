@@ -3,35 +3,76 @@ import logo from "../assets/Anbin Aravanaippu Arakkattalai Logo.png"
 import "../CSS/NavBar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
+import Vortex from "./Vortex"
 
 const NavBar = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
-
     return (
-        <nav>
-            {/* Left section */}
-            <div className="nav-left">
-                <img src={logo} alt="Logo" />
-                <h1>அன்பின் அரவணைப்பு அறக்கட்டளை</h1>
-            </div>
+        <nav className="navbar navbar-expand-lg border-bottom border-3 border-primary">
+            <Vortex particleCount={50} colors={["#f228abff", "#0059ffff"]} speedFactor={0.02} />
+            <div className="container-fluid">
+                {/* Use a flex container to align the image and text */}
+                <div className="navbar-brand d-flex align-items-center gap-2">
+                    <img src={logo} alt="Logo" height={50} />
+                    <p className="mb-0 fs-4 flex-grow-1 trust-name">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
+                </div>
 
-            {/* Right section */}
-            <div className={`nav-right ${menuOpen ? "open" : ""}`}>
-                <p>Home</p>
-                <p>About</p>
-                <p>Profile</p>
-                <p>Vision</p>
-                <p>Mission</p>
-                <p>Services</p>
-                <p>Gallery</p>
-                <p>Contact</p>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon "></span>
+                </button>
             </div>
-
-            {/* Hamburger Icon */}
-            <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-                {menuOpen ? <FontAwesomeIcon icon={faXmark} style={{ color: "#fff" }} size="lg" /> : <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} size="lg" />}
+            <div className="collapse navbar-collapse me-3" id="navbarNav">
+                <ul className="navbar-nav me-auto">
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Home</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">About</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Vision</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Mission</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Projects</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Volunteer</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Contact</p>
+                    </li>
+                    <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Donate</p>
+                    </li>
+                </ul>
             </div>
         </nav>
+        // <nav>
+        //     {/* Left section */}
+        //     <div className="nav-left">
+        //         <img src={logo} alt="Logo" />
+        //         <h1>அன்பின் அரவணைப்பு அறக்கட்டளை</h1>
+        //     </div>
+
+        //     {/* Right section */}
+        //     <div className={`nav-right ${menuOpen ? "open" : ""}`}>
+        //         <p>Home</p>
+        //         <p>About</p>
+        //         <p>Profile</p>
+        //         <p>Vision</p>
+        //         <p>Mission</p>
+        //         <p>Services</p>
+        //         <p>Gallery</p>
+        //         <p>Contact</p>
+        //     </div>
+
+        //     {/* Hamburger Icon */}
+        //     <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        //         {menuOpen ? <FontAwesomeIcon icon={faXmark} style={{ color: "#fff" }} size="lg" /> : <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} size="lg" />}
+        //     </div>
+        // </nav>
     )
 }
 
