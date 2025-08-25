@@ -32,7 +32,7 @@ const NavBar = () => {
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Home</p>
                     </li>
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Abou</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">About</p>
                     </li>
                     <li className="nav-item">
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Vision</p>
