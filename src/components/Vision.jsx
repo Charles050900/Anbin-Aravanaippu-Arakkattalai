@@ -11,18 +11,68 @@ import vision9 from "../assets/vision9.jpg"
 import vision10 from "../assets/vision10.jpg"
 // import ribbon from "../assets/Ribbon.png"
 import title from "../assets/Vision.png"
+import { useEffect, useRef, useState } from "react"
 
 const Vision = () => {
+    const leftRef = useRef(null)
+    // const rightRef = useRef(null)
+
+    const [leftVisible, setLeftVisible] = useState(false)
+    // const [rightVisible, setRightVisible] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight
+
+            // Left element visibility
+            const leftTop = leftRef.current.getBoundingClientRect().top
+            if (leftTop < windowHeight - 50) setLeftVisible(true)
+
+            // // Right element visibility
+            // const rightTop = rightRef.current.getBoundingClientRect().top
+            // if (rightTop < windowHeight - 50) setRightVisible(true)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        handleScroll() // trigger on load
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
     return (
         <div className="vision">
             {/* <h1>Vision</h1> */}
-            <img src={title} alt="" />
-            <div className="vision-notes">
+            <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
+                <img src={title} alt="" />
                 <p>Everyone should have access to everything and everyone should live equally.</p>
                 <p>அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
             </div>
             <div className="vision-pics">
                 <div className="scroll-track">
+                    <img src={vision1} alt="" />
+                    <img src={vision2} alt="" />
+                    <img src={vision3} alt="" />
+                    <img src={vision4} alt="" />
+                    <img src={vision5} alt="" />
+                    <img src={vision6} alt="" />
+                    <img src={vision7} alt="" />
+                    <img src={vision8} alt="" />
+                    <img src={vision9} alt="" />
+                    <img src={vision10} alt="" />
+                    <img src={vision1} alt="" />
+                    <img src={vision2} alt="" />
+                    <img src={vision3} alt="" />
+                    <img src={vision4} alt="" />
+                    <img src={vision5} alt="" />
+                    <img src={vision6} alt="" />
+                    <img src={vision7} alt="" />
+                    <img src={vision8} alt="" />
+                    <img src={vision9} alt="" />
+                    <img src={vision10} alt="" />
+                </div>
+            </div>
+
+            <div className="vision-pics">
+                <div className="scroll-track-right">
                     <img src={vision1} alt="" />
                     <img src={vision2} alt="" />
                     <img src={vision3} alt="" />

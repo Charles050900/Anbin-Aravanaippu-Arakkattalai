@@ -26,6 +26,8 @@
     animation: floatUp 1.2s ease-in-out forwards;
 }
 
+
+
 @keyframes floatUp {
     from {
         opacity: 0;

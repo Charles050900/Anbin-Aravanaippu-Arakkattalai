@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 import "../CSS/Details.css"
 import pic1 from "../assets/Anbin Aravanaippu Arakkattalai Logo.png"
 import pic2 from "../assets/Group.jpg"
@@ -7,9 +7,34 @@ import pic4 from "../assets/Profile.jpg"
 import title from "../assets/Profile.png"
 
 const Details = () => {
+    const leftRef = useRef(null)
+    const rightRef = useRef(null)
+
+    const [leftVisible, setLeftVisible] = useState(false)
+    const [rightVisible, setRightVisible] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight
+
+            // Left element visibility
+            const leftTop = leftRef.current.getBoundingClientRect().top
+            if (leftTop < windowHeight - 50) setLeftVisible(true)
+
+            // Right element visibility
+            const rightTop = rightRef.current.getBoundingClientRect().top
+            if (rightTop < windowHeight - 50) setRightVisible(true)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        handleScroll() // trigger on load
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
+
     return (
         <div className="details">
-            <div className="details-left">
+            <div ref={leftRef} className={`details-left floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={title} alt="" />
                 <table cellSpacing={5}>
                     <tbody>
@@ -70,9 +95,9 @@ const Details = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="details-right">
+            <div ref={rightRef} className={`details-right floating-up ${rightVisible ? "visible" : ""}`}>
                 <div className="images">
-                    <img src={pic1} alt="" />
+                    <img src={pic1} alt="" className="profile-logo" />
                     <img src={pic2} alt="" className="pic" />
                     <img src={pic3} alt="" className="pic" />
                     <img src={pic4} alt="" className="pic" />

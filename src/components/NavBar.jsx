@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 import logo from "../assets/Anbin Aravanaippu Arakkattalai Logo.png"
 import "../CSS/NavBar.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 import Vortex from "./Vortex"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
-const NavBar = () => {
+
+const NavBar = ({ scrollToSection, refs }) => {
     return (
         <nav className="navbar navbar-expand-lg border-bottom border-3 border-primary">
             <Vortex particleCount={50} colors={["#f228abff", "#0059ffff"]} speedFactor={0.02} />
@@ -29,13 +30,24 @@ const NavBar = () => {
             <div className="collapse navbar-collapse me-3" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Home</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.HomeRef)}>
+                            Home
+                        </p>
                     </li>
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">About</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.aboutRef)}>
+                            About
+                        </p>
                     </li>
+                    {/* <li className="nav-item">
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.ProfileRef)}>
+                            Profile
+                        </p>
+                    </li> */}
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Vision</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.VisionRef)}>
+                            Vision
+                        </p>
                     </li>
                     <li className="nav-item">
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Mission</p>
@@ -53,6 +65,9 @@ const NavBar = () => {
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Donate</p>
                     </li>
                 </ul>
+            </div>
+            <div className="top-arrow" onClick={() => scrollToSection(refs.NavRef)}>
+                <FontAwesomeIcon icon={faArrowUp} bounce style={{ color: "#ffffff" }} />
             </div>
         </nav>
         // <nav>
