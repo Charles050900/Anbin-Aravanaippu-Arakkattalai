@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 50px 50px;
+    padding: 20px 50px;
     background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249));
     position: relative;
 }
@@ -19,8 +19,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    /* padding: 10px; */
 }
 .vision > .vision-notes > p {
     font-family: "Mukta_Malar_medium";
