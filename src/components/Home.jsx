@@ -12,6 +12,7 @@ const Home = () => {
     const aboutRef = useRef(null)
     const ProfileRef = useRef(null)
     const VisionRef = useRef(null)
+    const MissionRef = useRef(null)
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: "smooth" })
@@ -19,7 +20,7 @@ const Home = () => {
     return (
         <>
             <div ref={NavRef}>
-                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef }} />
+                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef }} />
             </div>
             <div ref={HomeRef}>
                 <Profile />
@@ -33,7 +34,9 @@ const Home = () => {
             <div ref={VisionRef}>
                 <Vision />
             </div>
-            <Mission />
+            <div ref={MissionRef}>
+                <Mission />
+            </div>
         </>
     )
 }

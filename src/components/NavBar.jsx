@@ -5,7 +5,6 @@ import Vortex from "./Vortex"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
-
 const NavBar = ({ scrollToSection, refs }) => {
     return (
         <nav className="navbar navbar-expand-lg border-bottom border-3 border-primary">
@@ -50,7 +49,9 @@ const NavBar = ({ scrollToSection, refs }) => {
                         </p>
                     </li>
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Mission</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.MissionRef)}>
+                            Mission
+                        </p>
                     </li>
                     <li className="nav-item">
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Projects</p>
