@@ -13,7 +13,7 @@ const Service = () => {
             <img src={title} alt="service" className="img-fluid" style={{ height: "100px", objectFit: "contain" }} />
             <div className="row row-cols-1 row-cols-md-4 g-5 p-5 ">
                 <div className="col">
-                    <div className="card h-100 ">
+                    <div className="card h-100 border-3 border-light">
                         <img src={NightStudy} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -26,7 +26,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeEquipment} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -37,7 +37,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeProjector} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -49,7 +49,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeSelfDefence} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -61,7 +61,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100 ">
+                    <div className="card h-100 border-3 border-light">
                         <img src={NightStudy} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -74,7 +74,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeEquipment} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -85,7 +85,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeProjector} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">
@@ -97,7 +97,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <div className="card h-100">
+                    <div className="card h-100 border-3 border-light">
                         <img src={FreeSelfDefence} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">

@@ -6,7 +6,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     /* background-color:rgb(255, 255, 255) ; */
-    border: 2px solid rgb(87, 168, 249);
+    
 
     box-shadow: 0px 0px 10px black;
     &:hover {

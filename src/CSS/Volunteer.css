@@ -1,30 +1,57 @@
 .volunteer {
     background: linear-gradient(to bottom, rgb(87, 168, 249), white, rgb(87, 168, 249));
-    /* border: 2px solid red; */
-}
-.right-line {
-    border-right: 3px black solid;
-    height: 2em;
+    font-family: "NotoSans";
 }
 
-.top-line {
-    border-top: 3px black solid;
-}
-
-.halved {
-    width: 50%;
-    float: left;
-}
-.volunteer > img {
+.volunteer > .title > img {
     height: 100px;
 }
 
 .profile-card > img {
-    margin: 10px;
-    height: 100px;
+    margin-bottom: 30px;
+    height: 150px;
     box-shadow: 0px 0px 10px black;
 }
 
-.container {
-    margin-top: 10px;
+
+
+.org-box {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.org-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 0px 10px black;
+}
+
+.org-connector {
+    width: 4px;
+    background: #007bff;
+    height: 50px;
+    margin: auto;
+}
+
+.org-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.volunteer2 {
+    background: linear-gradient(to bottom, rgb(87, 168, 249), white, rgb(87, 168, 249));
+    font-family: "NotoSans";
+}
+.shadow {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-5px) scale(1.05);
+
+    }
 }
