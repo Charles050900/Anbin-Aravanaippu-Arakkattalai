@@ -54,7 +54,9 @@ const NavBar = ({ scrollToSection, refs }) => {
                         </p>
                     </li>
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Projects</p>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.ServiceRef)}>
+                            Services
+                        </p>
                     </li>
                     <li className="nav-item">
                         <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center">Volunteer</p>

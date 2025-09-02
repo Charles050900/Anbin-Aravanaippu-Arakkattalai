@@ -5,6 +5,7 @@ import Details from "./Details"
 import Vision from "./Vision"
 import Mission from "./Mission"
 import { useRef } from "react"
+import Service from "./Service"
 
 const Home = () => {
     const NavRef = useRef(null)
@@ -13,6 +14,7 @@ const Home = () => {
     const ProfileRef = useRef(null)
     const VisionRef = useRef(null)
     const MissionRef = useRef(null)
+    const ServiceRef = useRef(null)
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: "smooth" })
@@ -20,7 +22,7 @@ const Home = () => {
     return (
         <>
             <div ref={NavRef}>
-                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef }} />
+                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef }} />
             </div>
             <div ref={HomeRef}>
                 <Profile />
@@ -36,6 +38,9 @@ const Home = () => {
             </div>
             <div ref={MissionRef}>
                 <Mission />
+            </div>
+            <div ref={ServiceRef}>
+                <Service />
             </div>
         </>
     )
