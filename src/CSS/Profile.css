@@ -3,13 +3,16 @@
     font-family: "Mukta_Malar_bold";
     font-size: 40px;
     backdrop-filter: blur(2px);
+
 }
 
 .carousel-content {
     color: rgb(1, 91, 181);
+    /* text-shadow: 2px 0px 2px white; */
     font-family: "Mukta_Malar_bold";
     font-size: 20px;
     backdrop-filter: blur(2px);
+    
 }
 /* Carousel caption floating effect */
 .carousel-caption h3,

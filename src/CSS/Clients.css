@@ -1,0 +1,7 @@
+.client {
+    background: linear-gradient(to bottom, rgb(87, 168, 249),white,white,  rgb(87, 168, 249));
+    /* font-family: "NotoSans"; */
+}
+.client h4{
+    text-align: justify;
+}

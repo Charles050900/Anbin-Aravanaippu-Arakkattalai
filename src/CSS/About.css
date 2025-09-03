@@ -24,6 +24,7 @@
 .about > .about-right > #p1 {
     text-align: justify;
     font-family: "NotoSans";
+    font-weight: bold;
     backdrop-filter: blur(5px);
     line-height: 1.7rem;
 }
@@ -31,7 +32,7 @@
 .about > .about-right > #p2 {
     backdrop-filter: blur(20px);
     text-align: justify;
-    font-family: "Mukta_Malar_medium";
+    font-family: "Mukta_Malar_bold";
     line-height: 1.7rem;
 }
 
@@ -68,7 +69,7 @@
         height: 100px;
     }
 
-    .about>.about-left>img{
+    .about > .about-left > img {
         transition: all 0.3s ease;
         &:hover {
             transform: scale(1.06);

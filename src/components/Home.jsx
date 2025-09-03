@@ -6,9 +6,10 @@ import Vision from "./Vision"
 import Mission from "./Mission"
 import { useRef } from "react"
 import Service from "./Service"
-import Volunteer from "./Volunteer1"
+// import Volunteer from "./Volunteer1"
 import Volunteer1 from "./Volunteer1"
 import Volunteer2 from "./Volunteer2"
+import Clients from "./Clients"
 
 const Home = () => {
     const NavRef = useRef(null)
@@ -50,6 +51,7 @@ const Home = () => {
                 <Volunteer1 />
             </div>
             <Volunteer2 />
+            <Clients />
         </>
     )
 }

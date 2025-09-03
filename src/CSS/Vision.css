@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px 50px;
     background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249));
     position: relative;
