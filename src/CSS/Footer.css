@@ -1,0 +1,7 @@
+.footer {
+    background-color: rgb(87, 168, 249);
+}
+
+.footer-logo {
+    filter: drop-shadow(0px 0px 5px white);
+}

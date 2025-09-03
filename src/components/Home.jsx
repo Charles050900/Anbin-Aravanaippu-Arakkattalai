@@ -10,6 +10,9 @@ import Service from "./Service"
 import Volunteer1 from "./Volunteer1"
 import Volunteer2 from "./Volunteer2"
 import Clients from "./Clients"
+import Contact from "./Contact"
+import Map from "./Map"
+import Footer from "./Footer"
 
 const Home = () => {
     const NavRef = useRef(null)
@@ -20,6 +23,8 @@ const Home = () => {
     const MissionRef = useRef(null)
     const ServiceRef = useRef(null)
     const VolunteerRef = useRef(null)
+    const ContactRef = useRef(null)
+    const DonateRef = useRef(null)
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: "smooth" })
@@ -27,7 +32,7 @@ const Home = () => {
     return (
         <>
             <div ref={NavRef}>
-                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef }} />
+                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef }} />
             </div>
             <div ref={HomeRef}>
                 <Profile />
@@ -52,6 +57,11 @@ const Home = () => {
             </div>
             <Volunteer2 />
             <Clients />
+            <div ref={ContactRef}>
+                <Contact />
+            </div>
+            <Map />
+            <Footer scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef }} />
         </>
     )
 }
