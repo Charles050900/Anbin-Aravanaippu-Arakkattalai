@@ -14,7 +14,7 @@ import "../CSS/Profile.css"
 
 function CarouselFadeExample() {
     return (
-        <Carousel fade>
+        <Carousel fade interval={1500}>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage1} style={{ height: "85vh", objectFit: "cover" }} />
                 <Carousel.Caption className=" d-lg-flex justify-content-center">
