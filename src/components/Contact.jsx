@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import "../CSS/Contact.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faLocationDot, faPhoneVolume } from "@fortawesome/free-solid-svg-icons"
 
 const Contact = () => {
     const [form, setForm] = useState({
@@ -13,7 +15,9 @@ const Contact = () => {
         const { name, value } = e.target
         setForm((prev) => ({ ...prev, [name]: value }))
     }
-
+    const handleSendMail = () => {
+        window.location.href = "mailto:aaa28102020@gmail.com?subject=Hello&body=I%20want%20to%20contact%20you."
+    }
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log("Form submitted:", form)
@@ -74,7 +78,7 @@ const Contact = () => {
 
                         {/* Button */}
                         <div className="d-grid">
-                            <button type="submit" className="button p-1 border-0 rounded fw-bold">
+                            <button type="submit" className="message-button p-1 border-0 rounded fw-bold">
                                 Send Message
                             </button>
                         </div>
@@ -87,13 +91,17 @@ const Contact = () => {
                             <strong>Address</strong>
                         </p>
                         <p className="text-lg-center">
-                            📍 No. 91, Mettu Street, Ekanapuram, Sriperumbudur Taluk, <br />
+                            <FontAwesomeIcon icon={faLocationDot} style={{ color: "#000000" }} /> - No. 91, Mettu Street, Ekanapuram, Sriperumbudur Taluk, <br />
                             Kanchipuram District – 631 553
                         </p>
-                        <p>📞 99942 16991 / 99001 57744</p>
-                        <p>✉ aaa28102020@gmail.com</p>
+                        <p>
+                            <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#000000" }} /> - 9994216991
+                        </p>
+                        <p className="mail" onClick={handleSendMail}>
+                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#000000" }} /> - aaa28102020@gmail.com
+                        </p>
                     </div>
-                    <div className="map"></div>
+
                 </div>
             </div>
         </div>
