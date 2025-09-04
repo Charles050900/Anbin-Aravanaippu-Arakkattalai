@@ -6,7 +6,7 @@
     align-items: center;
     gap: 20px;
     padding: 25% 5%;
-    background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249));
+    /* background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249)); */
 }
 
 .details > .details-left {

@@ -42,11 +42,11 @@ const Vision = () => {
         <div className="vision">
             {/* <h1>Vision</h1> */}
             <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
-                <img src={title} alt="" />
-                <p>Everyone should have access to everything and everyone should live equally.</p>
-                <p>அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
+                <img src={title} alt="" className="mb-4" />
+                <p className="fw-bold">Everyone should have access to everything and everyone should live equally.</p>
+                <p className="fw-bold">அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
             </div>
-            <div className="vision-pics">
+            <div className="vision-pics mt-5">
                 <div className="scroll-track">
                     <img src={vision1} alt="" />
                     <img src={vision2} alt="" />
@@ -71,7 +71,7 @@ const Vision = () => {
                 </div>
             </div>
 
-            <div className="vision-pics">
+            <div className="vision-pics mt-5">
                 <div className="scroll-track-right">
                     <img src={vision1} alt="" />
                     <img src={vision2} alt="" />

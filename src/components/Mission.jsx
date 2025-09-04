@@ -1,47 +1,19 @@
-import React, { useEffect, useRef, useState } from "react"
 import "../CSS/Mission.css"
 import pic1 from "../assets/mission1.jpg"
 import pic2 from "../assets/mission2.jpg"
-// import ribbon from "../assets/Ribbon.png"
 import title from "../assets/Mission.png"
-import { height } from "@fortawesome/free-brands-svg-icons/fa11ty"
 
 const Mission = () => {
-    const leftRef = useRef(null)
-    const rightRef = useRef(null)
-
-    const [leftVisible, setLeftVisible] = useState(false)
-    const [rightVisible, setRightVisible] = useState(false)
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const windowHeight = window.innerHeight
-
-            // Left element visibility
-            const leftTop = leftRef.current.getBoundingClientRect().top
-            if (leftTop < windowHeight - 50) setLeftVisible(true)
-
-            // Right element visibility
-            const rightTop = rightRef.current.getBoundingClientRect().top
-            if (rightTop < windowHeight - 50) setRightVisible(true)
-        }
-
-        window.addEventListener("scroll", handleScroll)
-        handleScroll() // trigger on load
-
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-
     return (
         <div className="mission px-5 pb-5">
             {/* Title */}
-            <div ref={rightRef} className={`text-center p-5 floating-up ${rightVisible ? "visible" : ""}`}>
+            <div className={`text-center p-5`}>
                 <img src={title} alt="Mission" className="img-fluid" style={{ height: "100px", objectFit: "contain" }} />
             </div>
 
             {/* First Section */}
-            <div ref={leftRef} className={`row align-items-center mb-5 floating-up ${leftVisible ? "visible" : ""}`}>
-                <div className="col-lg-9 order-2 order-lg-1 sec-1">
+            <div className={`row align-items-center mb-5 `}>
+                <div className="col-lg-9 order-2 order-lg-1 sec-1 ">
                     <ol>
                         <li>Benefiting the vulnerable communities through government schemes for their welfare.</li>
                         <li>Fighting for the rights of women in society.</li>
@@ -62,13 +34,13 @@ const Mission = () => {
                         </li>
                     </ol>
                 </div>
-                <div className="col-lg-3  order-1 order-lg-2 mb-4 mb-lg-0 ">
+                <div className="col-lg-3 text-center  order-1 order-lg-2 mb-4 mb-lg-0 d-lg-flex justify-content-center">
                     <img src={pic1} alt="Mission Pic 1" className="img-fluid rounded mission-pic-1" style={{ height: "250px" }} />
                 </div>
             </div>
 
             {/* Second Section */}
-            <div ref={leftRef} className={`row align-items-center floating-up ${leftVisible ? "visible" : ""}`}>
+            <div className={`row align-items-center`}>
                 <div className="col-lg-3 text-center mb-4 mb-lg-0">
                     <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded mission-pic-2" style={{ height: "250px" }} />
                 </div>

@@ -1,150 +1,27 @@
 .about {
-    /* border: 2px solid red; */
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249));
-}
-.about > .about-right {
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 2rem;
-    /* background: url('../assets/Anbin Aravanaippu Arakkattalai Logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px; */
-
-    /* flex: 1; */
-}
-.about > .about-right > #p1 {
-    text-align: justify;
-    font-family: "NotoSans";
-    font-weight: bold;
-    backdrop-filter: blur(5px);
-    line-height: 1.7rem;
-}
-
-.about > .about-right > #p2 {
-    backdrop-filter: blur(20px);
-    text-align: justify;
-    font-family: "Mukta_Malar_bold";
-    line-height: 1.7rem;
+background-color: #e5e5f7;
+/* opacity: 0.8; */
+background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
 }
 
 .about > .about-right > img {
-    height: 70px;
-}
-.about > .about-left {
-    /* flex: 1; */
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-.about > .about-left > img {
-    max-width: 100%;
-    /* height: 200px; */
-    border-radius: 50px;
-    box-shadow: 10px 10px 5px black;
-}
-
-@media (width >= 60em) {
-    .about {
-        /* border: 2px solid red; */
-        padding: 0rem 5rem;
-    }
-
-    .about > .about-right {
-        /* border: 2px solid; */
-        flex: 1;
-        flex-basis: 50%;
-    }
-    .about > .about-right > img {
-        height: 100px;
-    }
-
-    .about > .about-left > img {
-        transition: all 0.3s ease;
-        &:hover {
-            transform: scale(1.06);
-        }
-    }
-    .floating-up {
-        opacity: 0; /* hidden by default */
-        transform: translateY(50px); /* start below */
-        transition: all 0.6s ease-out; /* smooth animation */
-    }
-
-    .floating-up.visible {
-        opacity: 1;
-        transform: translateY(0); /* float up to original position */
-    }
-}
-
-/* .about {
-    height: 70vh;
-    border: 2px solid rebeccapurple;
-    display: flex;
-    padding: 5%;
-    position: relative;
-    background-color: rgb(185, 217, 244);
-}
-.about > .about-right {
-    border: 2px solid green;
-    flex-basis: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.about > .about-right > img {
-    position: absolute;
     height: 100px;
-    top: -60px;
 }
-.about > .about-right > p {
-    text-align: justify;
+#p1 {
+    font-family: "NotoSans";
 }
-.about > .about-right > #p1 {
-    font-family: "NotoSans", sans-serif;
-    word-spacing: 5px;
-    line-height: 25px;
+#p2 {
+    font-family: "Mukta_Malar_bold";
 }
-.about > .about-right > #p2 {
-    font-family: "Mukta_Malar_medium";
-}
-.about > .about-left {
-    flex-basis: 50%;
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .about > .about-left > img {
-    height: 350px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 2px rgb(1, 91, 181);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
 }
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        height: auto;
-    }
-    .about > .about-left,
-    .about >4 .about-right {
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .about > .about-left > img {
-        width: 90%;
-        height: auto;
-    }
-} */

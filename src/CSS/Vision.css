@@ -7,8 +7,13 @@
     align-items: center;
     gap: 30px;
     padding: 20px 50px;
-    background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249));
+    /* background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249)); */
     position: relative;
+    background-color: #e5e5f7;
+    /* opacity: 0.8; */
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 .vision-notes > img {
     height: 100px;

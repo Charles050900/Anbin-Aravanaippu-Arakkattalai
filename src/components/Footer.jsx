@@ -59,8 +59,8 @@ const Footer = ({ scrollToSection, refs }) => {
                     </div>
 
                     {/* Copyright */}
-                    <div className="col-md-4 text-center text-md-end fw-bold">
-                        <small>© {new Date().getFullYear()}. All Rights Reserved.</small>
+                    <div className="col-md-4 text-center text-md-end fw-bold copy-right d-lg-flex justify-content-center ">
+                        <small>Copyright © {new Date().getFullYear()}. All Rights Reserved.</small>
                     </div>
                 </div>
             </div>

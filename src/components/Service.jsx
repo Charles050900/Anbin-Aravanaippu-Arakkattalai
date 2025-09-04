@@ -13,6 +13,35 @@ const Service = () => {
             <img src={title} alt="service" className="img-fluid" style={{ height: "100px", objectFit: "contain" }} />
             <div className="row row-cols-1 row-cols-md-4 g-5 p-5 ">
                 <div className="col">
+                    <div className="flip-container">
+                        <div className="flip-card">
+
+                            <div className="flip-front">
+                                <div className="card h-100 ">
+                                    <img src={NightStudy} className="card-img-top h-75" alt="..." />
+                                    <div className="card-body  d-flex justify-content-center align-items-center">
+                                        <h5 className="card-title">
+                                            Free Evening Education
+                                            <br />
+                                            (இலவச மாலைநேர கல்வி)
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flip-back">
+                                <div className="card h-100 border-3 border-light">
+                                    <div className="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5 className="card-title">Back Side</h5>
+                                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="col">
                     <div className="card h-100 border-3 border-light">
                         <img src={NightStudy} className="card-img-top" alt="..." />
                         <div className="card-body">
@@ -24,7 +53,36 @@ const Service = () => {
                             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                {/* <div className="col">
+                    <div className="flip-container">
+                        <div className="flip-card">
+
+                            <div className="flip-front">
+                                <div className="card h-100 ">
+                                    <img src={NightStudy} className="card-img-top h-75" alt="..." />
+                                    <div className="card-body  d-flex justify-content-center align-items-center">
+                                        <h5 className="card-title">
+                                            Free Evening Education
+                                            <br />
+                                            (இலவச மாலைநேர கல்வி)
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="flip-back">
+                                <div className="card h-100 border-3 border-light">
+                                    <div className="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5 className="card-title">Back Side</h5>
+                                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
                 <div className="col">
                     <div className="card h-100 border-3 border-light">
                         <img src={FreeEquipment} className="card-img-top" alt="..." />

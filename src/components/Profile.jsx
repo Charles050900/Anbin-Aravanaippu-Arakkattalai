@@ -17,72 +17,72 @@ function CarouselFadeExample() {
         <Carousel fade>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage1} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p> */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage2} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100 " src={CarouselImage3} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage4} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage5} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage6} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p> */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage7} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage8} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage9} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="d-block w-100" src={CarouselImage10} style={{ height: "85vh", objectFit: "cover" }} />
-                <Carousel.Caption>
-                    <h3 className="carousel-heading">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
-                    <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "}
+                <Carousel.Caption className=" d-lg-flex justify-content-center">
+                    <h3 className="carousel-heading px-5 py-2 rounded-pill">அன்பின் அரவணைப்பு அறக்கட்டளை</h3>
+                    {/* <p className="carousel-content">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>{" "} */}
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

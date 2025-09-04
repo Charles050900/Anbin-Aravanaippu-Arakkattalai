@@ -7,7 +7,7 @@ const Volunteer1 = () => {
     return (
         <div className="volunteer py-4">
             <div className="title d-flex justify-content-center mb-4">
-                <img src={title} alt="" />
+                <img src={title} alt="" className="mb-4" />
             </div>
             {/* <!-- B. BOMBAY --> */}
             <div className="row justify-content-center">
