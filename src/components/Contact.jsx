@@ -23,7 +23,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="px-5 contact">
+        <div className="pb-5 contact">
             <h2 className="text-center mb-5 fw-bold">Contact Us</h2>
             <div className="row gap-lg-5 gap-md-3 gap-5  justify-content-center">
                 <div className="col-md-8 col-lg-4">
