@@ -24,7 +24,7 @@ const ClientSection = () => {
     const clients = [client1, client2, client3]
 
     return (
-        <div className="client p-lg-5  ">
+        <div className="client px-lg-5  py-3 ">
             <h2 className="text-center fw-bold mb-3 ">Our Supporting Partners</h2>
             <div className="row align-items-center p-5">
                 {/* Left side - Quote */}
