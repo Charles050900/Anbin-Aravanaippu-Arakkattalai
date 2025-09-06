@@ -30,7 +30,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className="about row py-4 px-5">
+        <div className="about row py-4 px-5 text-white">
             <div ref={rightRef} className={`about-right p-3 col-12 col-lg-8 d-lg-flex flex-column justify-content-center align-items-center floating-up ${rightVisible ? "visible" : ""}`}>
                 <img src={title} alt="" className="mb-4 " />
                 <p id="p2" className="text-center mb-5">
