@@ -12,7 +12,7 @@ const NavBar = ({ scrollToSection, refs }) => {
             <div className="container-fluid">
                 {/* Use a flex container to align the image and text */}
                 <div className="d-flex flex-column flex-md-row align-items-center gap-2">
-                    <img src={logo} alt="Logo" height={60} className="logo"/>
+                    <img src={logo} alt="Logo" height={60} className="logo" />
                     <div className="d-flex flex-column text-center">
                         <p className="mb-0 fs-5 flex-grow-1 trust-name trust-heading text-lg-center ">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
                         <p className="mb-0 trust-name text-lg-center trust-vision">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>
@@ -70,8 +70,8 @@ const NavBar = ({ scrollToSection, refs }) => {
                     </li>
                 </ul>
             </div>
-            <div className="top-arrow" onClick={() => scrollToSection(refs.NavRef)}>
-                <FontAwesomeIcon icon={faArrowUp} bounce style={{ color: "#ffffff" }} />
+            <div className="top-arrow bg-white" onClick={() => scrollToSection(refs.NavRef)}>
+                <FontAwesomeIcon icon={faArrowUp} bounce style={{ color: "#0d40a5ff" }} />
             </div>
         </nav>
     )
