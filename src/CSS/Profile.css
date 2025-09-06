@@ -19,7 +19,7 @@
 }
 /* Carousel caption floating effect */
 .carousel-caption h3,
-.carousel-caption p {
+.carousel-caption img {
     animation: floatUp 1.2s ease-in-out forwards;
 }
 
@@ -33,3 +33,4 @@
         transform: translateY(0);
     }
 }
+

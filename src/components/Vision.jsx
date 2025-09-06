@@ -39,7 +39,7 @@ const Vision = () => {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
     return (
-        <div className="vision">
+        <div className="vision text-white pb-5">
             {/* <h1>Vision</h1> */}
             <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={title} alt="" className="mb-4" />

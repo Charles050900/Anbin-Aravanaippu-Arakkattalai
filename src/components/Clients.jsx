@@ -6,11 +6,12 @@ import "slick-carousel/slick/slick-theme.css"
 import client1 from "../assets/client1.png"
 import client2 from "../assets/client2.png"
 import client3 from "../assets/client3.png"
+import client4 from "../assets/client4.png"
 import "../CSS/Clients.css"
 
 const ClientSection = () => {
     const settings = {
-        vertical: true,
+        vertical: false,
         verticalSwiping: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -21,26 +22,30 @@ const ClientSection = () => {
         infinite: true,
     }
 
-    const clients = [client1, client2, client3]
+    // const clients = [client1, client2, client3, client4]
 
     return (
-        <div className="client px-lg-5  py-3 ">
-            <h2 className="text-center fw-bold mb-3 ">Our Supporting Partners</h2>
-            <div className="row align-items-center p-5">
+        <div className="client px-lg-5  pb-5 text-white">
+            <h2 className="text-center fw-bold">Our Supporting Partners</h2>
+            <div className="row align-items-center ">
                 {/* Left side - Quote */}
-                <div className="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                    <h4 className="fw-bold">“Alone we can do so little; together we can do so much.”</h4>
+                <div className="col p-5 ">
+                    <h4 className="fw-bold text-center">Alone we can do so little - together we can do so much.</h4>
                 </div>
 
                 {/* Right side - Vertical Slider */}
-                <div className="col-md-6  border-3 border-dark">
-                    <Slider {...settings}>
-                        {clients.map((logo, index) => (
-                            <div key={index} className="d-flex justify-content-center p-1">
-                                <img src={logo} alt={`client-${index}`} />
-                            </div>
-                        ))}
-                    </Slider>
+                <div className="client-slider px-5 py-2">
+                    <div className="client-track">
+                        <img src={client1} alt="client1" />
+                        <img src={client2} alt="client2" />
+                        <img src={client3} alt="client3" />
+                        <img src={client4} alt="client4" />
+                        {/* duplicate set for seamless loop */}
+                        <img src={client1} alt="client1" />
+                        <img src={client2} alt="client2" />
+                        <img src={client3} alt="client3" />
+                        <img src={client4} alt="client4" />
+                    </div>
                 </div>
             </div>
         </div>

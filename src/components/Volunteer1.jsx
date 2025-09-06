@@ -7,13 +7,14 @@ const Volunteer1 = () => {
     return (
         <div className="volunteer py-4">
             <div className="title d-flex justify-content-center mb-4">
-                <img src={title} alt="" className="mb-4" />
+                <img src={title} alt="" className="m" />
             </div>
             {/* <!-- B. BOMBAY --> */}
             <div className="row justify-content-center">
                 <div className="col-10 col-sm-8 col-md-6 col-lg-2 text-center">
+                    <h2 className="mb-5 fw-bold text-white">Organisers</h2>
                     <div className="org-box">
-                        <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" />
+                        {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. BOMBAY</h5>
                         <p className="mb-0">Founder & President of Trustee</p>
                     </div>

@@ -3,7 +3,7 @@ import logo from "../assets/Anbin Aravanaippu Arakkattalai Logo.png" // replace 
 import "../CSS/Footer.css"
 const Footer = ({ scrollToSection, refs }) => {
     return (
-        <footer className="py-4 footer">
+        <footer className="py-4 footer text-white">
             <div className="px-5">
                 <div className="row align-items-center">
                     {/* Logo + Name */}
@@ -13,45 +13,45 @@ const Footer = ({ scrollToSection, refs }) => {
                     </div>
 
                     {/* Links */}
-                    <div className="col-md-4 mb-3 mb-md-0">
-                        <ul className="nav justify-content-center">
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.NavRef)}>
+                    <div className="col-md-4 mb-3 mb-md-0 ">
+                        <ul className="nav justify-content-center ">
+                            <li className="nav-item me-4 ">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.NavRef)}>
                                     Home
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.AboutRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.AboutRef)}>
                                     About
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.VisionRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.VisionRef)}>
                                     Vision
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.MissionRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.MissionRef)}>
                                     Mission
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.ServiceRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.ServiceRef)}>
                                     Services
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.VolunteerRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.VolunteerRef)}>
                                     Volunteer
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.ContactRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.ContactRef)}>
                                     Contact
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark fw-bold" onClick={() => scrollToSection(refs.NavRef)}>
+                            <li className="nav-item me-4">
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.NavRef)}>
                                     Donate
                                 </a>
                             </li>

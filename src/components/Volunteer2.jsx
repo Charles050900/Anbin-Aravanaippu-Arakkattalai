@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 const Volunteer2 = () => {
     return (
         <div className="volunteer2 p-5">
-            <h4 className="text-center mb-4 fw-bold">Publisher</h4>
+            <h3 className="text-center mb-4 fw-bold text-white ">Publisher</h3>
 
             <div className="row">
                 <div className="col d-lg-flex justify-content-center">
@@ -17,7 +17,7 @@ const Volunteer2 = () => {
             </div>
 
             {/* Advisory Members */}
-            <h4 className="text-center mb-4 fw-bold">Advisory Members</h4>
+            <h3 className="text-center mb-4 fw-bold text-white">Advisory Members</h3>
             <div className="row mb-5 ">
                 <div className="col-lg-6 mb-3 d-flex justify-content-lg-end justify-content-center  ">
                     <div className="card p-3 w-50 shadow rounded text-center bg-primary text-white ">
@@ -34,7 +34,7 @@ const Volunteer2 = () => {
             </div>
 
             {/* Board Members */}
-            <h4 className="text-center mb-4 fw-bold">Board Members</h4>
+            <h3 className="text-center mb-4 fw-bold text-white">Board Members</h3>
             <div className="row">
                 <div className="col-md-6 mb-4 d-flex justify-content-lg-end justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">

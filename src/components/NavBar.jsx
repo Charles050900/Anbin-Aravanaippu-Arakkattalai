@@ -7,18 +7,15 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
 const NavBar = ({ scrollToSection, refs }) => {
     return (
-        <nav className="navbar navbar-expand-lg border-bottom border-3 border-primary">
+        <nav className="navbar navbar-expand-lg  border-bottom border-3 border-primary">
             <Vortex particleCount={50} colors={["#f228abff", "#0059ffff"]} speedFactor={0.02} />
             <div className="container-fluid">
                 {/* Use a flex container to align the image and text */}
-                <div className="navbar-brand d-flex flex-column flex-md-row align-items-center gap-2">
-                    <img src={logo} alt="Logo" height={50} />
-                    <div className="d-flex flex-column">
-                        <p className="mb-0 fs-5 flex-grow-1 trust-name ">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
-                        <p className="mb-0 flex-grow-1 trust-name text-center trust-vision">
-                            அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், <br />
-                            அனைவரும் சம நிலையில் வாழ வேண்டும்.
-                        </p>
+                <div className="d-flex flex-column flex-md-row align-items-center gap-2">
+                    <img src={logo} alt="Logo" height={60} className="logo"/>
+                    <div className="d-flex flex-column text-center">
+                        <p className="mb-0 fs-5 flex-grow-1 trust-name trust-heading text-lg-center ">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
+                        <p className="mb-0 trust-name text-lg-center trust-vision">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>
                     </div>
                 </div>
 
@@ -29,7 +26,7 @@ const NavBar = ({ scrollToSection, refs }) => {
             <div className="collapse navbar-collapse me-3" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.HomeRef)}>
+                        <p className="nav-link mb-0 ms-0 px-3 d-flex justify-content-center" onClick={() => scrollToSection(refs.NavRef)}>
                             Home
                         </p>
                     </li>

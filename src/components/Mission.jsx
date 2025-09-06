@@ -13,7 +13,7 @@ const Mission = () => {
 
             {/* First Section */}
             <div className={`row align-items-center mb-5 `}>
-                <div className="col-lg-9 order-2 order-lg-1 sec-1 ">
+                <div className="col-lg-9 order-2 order-lg-1 sec-1  ps-5 py-4 text-white">
                     <ol>
                         <li>Benefiting the vulnerable communities through government schemes for their welfare.</li>
                         <li>Fighting for the rights of women in society.</li>
@@ -41,10 +41,10 @@ const Mission = () => {
 
             {/* Second Section */}
             <div className={`row align-items-center`}>
-                <div className="col-lg-3 text-center mb-4 mb-lg-0">
-                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded mission-pic-2" style={{ height: "250px" }} />
+                <div className="col-lg-3 text-center mb-4 mb-lg-0 mission_left_img p-5">
+                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded  mission-pic-2" style={{ height: "210px" }} />
                 </div>
-                <div className="col-lg-9 sec-2">
+                <div className="col-lg-9 sec-2 text-white">
                     <ol>
                         <li>நலிந்த சமுதாய மக்கள் நல்வாழ்வு பெறும் வகையில் அரசு திட்டங்கள் மூலம் பயன்பெறச் செய்வது.</li>
                         <li>சமுதாயத்தில் பெண்கள் சமூதாய வாழ்வு உரிமைகளுக்காக போராடுதல்.</li>

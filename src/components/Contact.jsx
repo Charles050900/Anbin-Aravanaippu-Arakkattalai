@@ -27,8 +27,8 @@ const Contact = () => {
     }
 
     return (
-        <div className="pb-5 contact">
-            <h2 className="text-center mb-5 fw-bold">Contact Us</h2>
+        <div className="pb-5 contact ">
+            <h2 className="text-center mb-5 fw-bold text-white">Contact Us</h2>
             <div className="row gap-lg-5 gap-md-3 gap-5  justify-content-center">
                 <div className="col-md-8 col-lg-4">
                     <form onSubmit={handleSubmit} className="form p-5">
@@ -101,7 +101,6 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#000000" }} /> - aaa28102020@gmail.com
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
