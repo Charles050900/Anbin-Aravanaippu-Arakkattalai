@@ -39,8 +39,8 @@ const Volunteer1 = () => {
                 <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
-                        <h5 className="fw-bold">B. PRAKASH</h5>
-                        <p className="mb-0">Treasurer of Trustee</p>
+                        <h5 className="fw-bold">K. KAMALI</h5>
+                        <p className="mb-0">Trustee</p>
                     </div>
                     <div className="org-connector"></div>
                 </div>
@@ -48,21 +48,30 @@ const Volunteer1 = () => {
                 <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
-                        <h5 className="fw-bold">P. DILLI RASU</h5>
+                        <h5 className="fw-bold">B. KABILDEV</h5>
                         <p className="mb-0">Treasurer of Trustee</p>
                     </div>
                     <div className="org-connector"></div>
                 </div>
             </div>
 
-            {/* <!-- RAJKUMAR --> */}
             <div className="row justify-content-center">
-                <div className="col-10 col-sm-8 col-md-6 col-lg-3 text-center">
+                <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
                     <div className="org-box">
-                        {/* <img src={pic} alt="" className="img-fluid w-25 rounded-4 mb-4" /> */}
-                        <h5 className="fw-bold">RAJKUMAR</h5>
+                        {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
+                        <h5 className="fw-bold">D. KANISHKAR</h5>
                         <p className="mb-0">Trustee</p>
                     </div>
+                    {/* <div className="org-connector"></div> */}
+                </div>
+
+                <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
+                    <div className="org-box">
+                        {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
+                        <h5 className="fw-bold">G. THENRAL NILAVAN</h5>
+                        <p className="mb-0">Treasurer of Trustee</p>
+                    </div>
+                    {/* <div className="org-connector"></div> */}
                 </div>
             </div>
         </div>

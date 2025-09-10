@@ -4,19 +4,20 @@ import "bootstrap/dist/css/bootstrap.min.css"
 const Volunteer2 = () => {
     return (
         <div className="volunteer2 p-5">
-            <h3 className="text-center mb-4 fw-bold text-white ">Publisher</h3>
+            <h3 className="text-center mb-4 fw-bold text-white ">Advisory Board</h3>
 
             <div className="row">
                 <div className="col d-lg-flex justify-content-center">
                     {/* Top Advisory */}
                     <div className="card p-4 mb-5 shadow rounded text-center bg-primary text-white box">
-                        <h4 className="mb-1 fw-bold">Dr. V. Murugan</h4>
-                        <p className="mb-0">Advisory of Board & Editor/Publisher - Nigalkalam News</p>
+                        <h4 className="mb-2 fw-bold">Dolphin Sritharan</h4>
+                        <p className="mb-2">MD at Sendhamarai Engineering Private Limited</p>
+                        <p className="mb-0">Advisory of Board</p>
                     </div>
                 </div>
             </div>
 
-            {/* Advisory Members */}
+            {/* Advisory Members
             <h3 className="text-center mb-4 fw-bold text-white">Advisory Members</h3>
             <div className="row mb-5 ">
                 <div className="col-lg-6 mb-3 d-flex justify-content-lg-end justify-content-center  ">
@@ -31,32 +32,44 @@ const Volunteer2 = () => {
                         <p className="mb-0">Advisory of Board</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Board Members */}
             <h3 className="text-center mb-4 fw-bold text-white">Board Members</h3>
             <div className="row">
                 <div className="col-md-6 mb-4 d-flex justify-content-lg-end justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
-                        <h5 className="mb-1 fw-bold">M. Jabadurai, B.A., B.L., B.Ed</h5>
+                        <h5 className="mb-1 fw-bold">M. Jabadurai</h5>
                         <p className="mb-0">Member of Board / Advocate</p>
                     </div>
                 </div>
                 <div className="col-md-6 mb-4  d-flex justify-content-lg-start justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
-                        <h5 className="mb-1 fw-bold">M. Kathirvel</h5>
-                        <p className="mb-0">Member of Board / Govt. Doc Registrar</p>
+                        <h5 className="mb-1 fw-bold">Mr. Subhash</h5>
+                        <p className="mb-0">CEO at Sendhamarai Engineering Private Limited</p>
                     </div>
                 </div>
                 <div className="col-md-6 mb-3 d-flex justify-content-lg-end justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
-                        <h5 className="mb-1 fw-bold">K. Kamali, B.Sc.</h5>
+                        <h5 className="mb-1 fw-bold">M. Madhan</h5>
                         <p className="mb-0">Member of Board</p>
                     </div>
                 </div>
                 <div className="col-md-6 mb-3 d-flex justify-content-lg-start justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
-                        <h5 className="mb-1 fw-bold">D. Preethi, MBA</h5>
+                        <h5 className="mb-1 fw-bold">Master Angappon</h5>
+                        <p className="mb-0">Member of Board</p>
+                    </div>
+                </div>
+                <div className="col-md-6 mb-3 d-flex justify-content-lg-end justify-content-center">
+                    <div className="card p-3 w-50 shadow rounded text-center">
+                        <h5 className="mb-1 fw-bold">A. Vimal</h5>
+                        <p className="mb-0">Member of Board</p>
+                    </div>
+                </div>
+                <div className="col-md-6 mb-3 d-flex justify-content-lg-start justify-content-center">
+                    <div className="card p-3 w-50 shadow rounded text-center">
+                        <h5 className="mb-1 fw-bold">Y. Abiyuth</h5>
                         <p className="mb-0">Member of Board</p>
                     </div>
                 </div>

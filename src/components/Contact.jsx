@@ -27,11 +27,11 @@ const Contact = () => {
     }
 
     return (
-        <div className="pb-5 contact ">
+        <div className="pb-5 p-5 contact ">
             <h2 className="text-center mb-5 fw-bold text-white">Contact Us</h2>
-            <div className="row gap-lg-5 gap-md-3 gap-5  justify-content-center">
-                <div className="col-md-8 col-lg-4">
-                    <form onSubmit={handleSubmit} className="form p-5">
+            <div className="row gap-lg-3 gap-md-3 justify-content-center">
+                <div className="col-md-8 col-lg-4 p-lg-5 form-outer  d-flex justify-content-center">
+                    <form onSubmit={handleSubmit} className="form  mt-5 p-4 w-75">
                         {/* Name */}
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label fw-bold">
@@ -85,20 +85,20 @@ const Contact = () => {
                     </form>
                 </div>
 
-                <div className="col-lg-5 col-md-4 d-lg-flex flex-column justify-content-center align-items-center address ">
-                    <div className="address-details d-lg-flex flex-column justify-content-center align-items-center p-4 fw-bold">
+                <div className="col-lg-6 col-md-4 d-lg-flex flex-column justify-content-center align-items-center mt-5 address ">
+                    <div className="address-details text-white d-lg-flex flex-column justify-content-center align-items-center p-5  fw-bold">
+                        <h4 className="text-center fw-bold mb-4">
+                            Address
+                        </h4>
                         <p className="text-center">
-                            <strong>Address</strong>
+                            <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffffff" }} /> - No. 91, Mettu Street, Ekanapuram, <br />
+                            Sriperumbudur Taluk, Kanchipuram District – 631 553
                         </p>
-                        <p className="text-lg-center">
-                            <FontAwesomeIcon icon={faLocationDot} style={{ color: "#000000" }} /> - No. 91, Mettu Street, Ekanapuram, Sriperumbudur Taluk, <br />
-                            Kanchipuram District – 631 553
+                        <p className="text-center">
+                            <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#ffffffff" }} /> - 9994216991
                         </p>
-                        <p>
-                            <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#000000" }} /> - 9994216991
-                        </p>
-                        <p className="mail" onClick={handleSendMail}>
-                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#000000" }} /> - aaa28102020@gmail.com
+                        <p className="mail text-center" onClick={handleSendMail}>
+                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#ffffffff" }} /> - aaa28102020@gmail.com
                         </p>
                     </div>
                 </div>
