@@ -23,7 +23,7 @@ const Contact = () => {
         console.log("Form submitted:", form)
         // Hook into API or email service here
         alert("Thank you! We received your message.")
-        setForm({ name: "", email: "", message: "" })
+        setForm({ name: "", email: "", message: "", phone: "" })
     }
 
     return (
@@ -87,9 +87,7 @@ const Contact = () => {
 
                 <div className="col-lg-6 col-md-4 d-lg-flex flex-column justify-content-center align-items-center mt-5 address ">
                     <div className="address-details text-white d-lg-flex flex-column justify-content-center align-items-center p-5  fw-bold">
-                        <h4 className="text-center fw-bold mb-4">
-                            Address
-                        </h4>
+                        <h4 className="text-center fw-bold mb-4">Address</h4>
                         <p className="text-center">
                             <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffffff" }} /> - No. 91, Mettu Street, Ekanapuram, <br />
                             Sriperumbudur Taluk, Kanchipuram District – 631 553

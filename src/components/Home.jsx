@@ -1,7 +1,7 @@
 import NavBar from "./NavBar"
 import Profile from "./Profile"
 import About from "./About"
-import Details from "./Details"
+// import Details from "./Details"
 import Vision from "./Vision"
 import Mission from "./Mission"
 import { useRef } from "react"
