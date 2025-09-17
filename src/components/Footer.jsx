@@ -51,7 +51,7 @@ const Footer = ({ scrollToSection, refs }) => {
                                 </a>
                             </li>
                             <li className="nav-item me-4">
-                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.NavRef)}>
+                                <a className="nav-link text-dark fw-medium text-white" onClick={() => scrollToSection(refs.DonateRef)}>
                                     Donate
                                 </a>
                             </li>

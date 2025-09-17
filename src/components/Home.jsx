@@ -65,7 +65,7 @@ const Home = () => {
                 <Donation />
             </div>
             <Map />
-            <Footer scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef }} />
+            <Footer scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef, DonateRef }} />
         </>
     )
 }
