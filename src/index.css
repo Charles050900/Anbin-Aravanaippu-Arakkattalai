@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: "Mukta_Malar_light";
+    src: url("./fonts/MuktaMalar-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Mukta_Malar_medium";
+    src: url("./fonts/MuktaMalar-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Mukta_Malar_bold";
+    src: url("./fonts/MuktaMalar-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NotoSans";
+    src: url("./fonts/NotoSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

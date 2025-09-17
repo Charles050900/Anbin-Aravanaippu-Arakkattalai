@@ -1,0 +1,36 @@
+.carousel-heading {
+    color: rgb(1, 91, 181);
+    font-family: "Mukta_Malar_bold";
+    font-size: 30px;
+    /* backdrop-filter: blur(2px); */
+    background-color: #e5e5f7;
+    /* opacity: 0.8; */
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+.carousel-content {
+    color: rgb(1, 91, 181);
+    /* text-shadow: 2px 0px 2px white; */
+    font-family: "Mukta_Malar_bold";
+    font-size: 20px;
+    backdrop-filter: blur(2px);
+}
+/* Carousel caption floating effect */
+.carousel-caption h3,
+.carousel-caption img {
+    animation: floatUp 1.2s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

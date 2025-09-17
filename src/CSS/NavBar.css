@@ -1,0 +1,44 @@
+.trust-name {
+    color: rgb(1, 91, 181);
+    font-family: "Mukta_Malar_bold";
+}
+
+.collapse > ul > li > p {
+    color: rgb(1, 91, 181);
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(1, 91, 181);
+        border-radius: 40px;
+    }
+}
+.trust-vision {
+    font-size: 15px;
+}
+
+/* Carousel caption floating effect */
+.trust-name,
+.trust-vision,
+.nav-item {
+    animation: floatUp 1.2s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-link {
+    &:hover {
+        cursor: pointer;
+    }
+}
