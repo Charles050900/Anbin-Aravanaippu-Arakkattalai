@@ -14,7 +14,7 @@ const NavBar = ({ scrollToSection, refs }) => {
                 <div className="d-flex flex-column flex-md-row align-items-center gap-2">
                     <img src={logo} alt="Logo" height={60} className="logo" />
                     <div className="d-flex flex-column text-center">
-                        <p className="mb-0 fs-5 flex-grow-1 trust-name trust-heading text-lg-center ">ன்பின் அரவணைப்பு அறக்கட்டளை</p>
+                        <p className="mb-0 fs-5 flex-grow-1 trust-name trust-heading text-lg-center ">அன்பின் அரவணைப்பு அறக்கட்டளை</p>
                         <p className="mb-0 trust-name text-lg-center trust-vision">அனைவருக்கும் அனைத்தும் கிடைக்க வேண்டும், அனைவரும் சம நிலையில் வாழ வேண்டும்.</p>
                     </div>
                 </div>
