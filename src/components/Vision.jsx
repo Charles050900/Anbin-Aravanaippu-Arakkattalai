@@ -38,7 +38,6 @@ const Vision = () => {
             const leftTop = leftRef.current.getBoundingClientRect().top
             if (leftTop < windowHeight - 50) setLeftVisible(true)
 
-            // // Right element visibility
             // const rightTop = rightRef.current.getBoundingClientRect().top
             // if (rightTop < windowHeight - 50) setRightVisible(true)
         }
@@ -49,7 +48,7 @@ const Vision = () => {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
     return (
-        <div className="vision text-white pb-5">
+        <div className="vision  text-white pb-5">
             {/* <h1>Vision</h1> */}
             <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={title} alt="" className="mb-4" />

@@ -9,7 +9,7 @@ import CarouselImage6 from "../assets/carousel-6.jpg"
 import CarouselImage7 from "../assets/carousel-7.jpg"
 import CarouselImage8 from "../assets/carousel-8.jpg"
 
-import carouselHeading from "../assets/heading 2.png"
+import carouselHeading from "../assets/heading 1.png"
 import "../CSS/Profile.css"
 
 function CarouselFadeExample() {

@@ -15,8 +15,8 @@ const Volunteer1 = () => {
                     <h2 className="mb-5 fw-bold text-white">Organisers</h2>
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
-                        <h5 className="fw-bold">B. BOMBAY</h5>
-                        <p className="mb-0">Founder & President of Trustee</p>
+                        <h5 className="fw-bold ">B. BOMBAY</h5>
+                        {/* <p className="mb-0">Founder & President of Trustee</p> */}
                     </div>
                     <div className="org-connector"></div>
                 </div>
@@ -28,7 +28,7 @@ const Volunteer1 = () => {
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KAWASKAR</h5>
-                        <p className="mb-0">General Secretary of Trustee</p>
+                        {/* <p className="mb-0">General Secretary of Trustee</p> */}
                     </div>
                     <div className="org-connector"></div>
                 </div>
@@ -49,7 +49,7 @@ const Volunteer1 = () => {
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KABILDEV</h5>
-                        <p className="mb-0">Treasurer of Trustee</p>
+                        <p className="mb-0">Trustee</p>
                     </div>
                     <div className="org-connector"></div>
                 </div>
@@ -69,7 +69,7 @@ const Volunteer1 = () => {
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">G. THENRAL NILAVAN</h5>
-                        <p className="mb-0">Treasurer of Trustee</p>
+                        <p className="mb-0">Trustee</p>
                     </div>
                     {/* <div className="org-connector"></div> */}
                 </div>

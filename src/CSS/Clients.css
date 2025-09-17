@@ -12,7 +12,7 @@
   overflow: hidden;
   width: 100%;
   /* background: #fff; */
-  background: rgba(255, 255, 255, 0.33);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(8px);
   border-radius: 30px;
 }

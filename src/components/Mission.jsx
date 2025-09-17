@@ -5,7 +5,7 @@ import title from "../assets/Mission.png"
 
 const Mission = () => {
     return (
-        <div className="mission px-5 pb-5">
+        <div className="mission  px-5 pb-5">
             {/* Title */}
             <div className={`text-center p-5`}>
                 <img src={title} alt="Mission" className="img-fluid" style={{ height: "100px", objectFit: "contain" }} />
@@ -42,7 +42,7 @@ const Mission = () => {
             {/* Second Section */}
             <div className={`row align-items-center`}>
                 <div className="col-lg-3 text-center mb-4 mb-lg-0 mission_left_img p-5">
-                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded  mission-pic-2" style={{ height: "210px" }} />
+                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded  mission-pic-2" style={{ height: "250px" }} />
                 </div>
                 <div className="col-lg-9 sec-2 text-white">
                     <ol>
