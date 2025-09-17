@@ -43,7 +43,6 @@ const Contact = () => {
                                 </label>
                                 <input type="text" id="name" name="name" className="form-control fw-bold" placeholder="Your name" value={form.name} onChange={handleChange} required />
                             </div>
-
                             {/* Email */}
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label fw-bold">
@@ -51,7 +50,6 @@ const Contact = () => {
                                 </label>
                                 <input type="email" id="email" name="email" className="form-control fw-bold" placeholder="Your email" value={form.email} onChange={handleChange} required />
                             </div>
-
                             {/* Phone */}
                             <div className="mb-3">
                                 <label htmlFor="phone" className="form-label fw-bold ">
@@ -71,7 +69,6 @@ const Contact = () => {
                                 />
                                 {/* <div className="form-text text-muted">Must be a valid 10-digit Indian mobile number.</div> */}
                             </div>
-
                             {/* Message */}
                             <div className="mb-3">
                                 <label htmlFor="message" className="form-label fw-bold ">
@@ -79,7 +76,6 @@ const Contact = () => {
                                 </label>
                                 <textarea id="message" name="message" rows="5" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required />
                             </div>
-
                             {/* Button */}
                             <div className="d-grid">
                                 <button type="submit" className="message-button p-1 border-0 rounded fw-bold">

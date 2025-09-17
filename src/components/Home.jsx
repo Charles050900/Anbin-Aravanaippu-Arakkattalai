@@ -13,6 +13,7 @@ import Clients from "./Clients"
 import Contact from "./Contact"
 import Map from "./Map"
 import Footer from "./Footer"
+import Donation from "./Donation"
 
 const Home = () => {
     const NavRef = useRef(null)
@@ -32,7 +33,7 @@ const Home = () => {
     return (
         <>
             <div ref={NavRef}>
-                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef }} />
+                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef, DonateRef }} />
             </div>
             <div ref={HomeRef}>
                 <Profile />
@@ -59,6 +60,9 @@ const Home = () => {
             <Clients />
             <div ref={ContactRef}>
                 <Contact />
+            </div>
+            <div ref={DonateRef}>
+                <Donation />
             </div>
             <Map />
             <Footer scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef }} />
