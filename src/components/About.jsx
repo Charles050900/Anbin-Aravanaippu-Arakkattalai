@@ -12,14 +12,22 @@ const About = () => {
             <div className={`about-right p-3 col-12 col-lg-12 d-lg-flex flex-column justify-content-center align-items-center `}>
                 <img src={title} alt="" className="mb-4 about-title" />
             </div>
+<<<<<<< HEAD
             <div className=" col-12 d-lg-flex justify-content-center align-items-center gap-lg-5 p-3">
+=======
+            <div className=" col-12 d-lg-flex justify-content-center align-items-center gap-lg-5 p-5">
+>>>>>>> be0176f1cfa24eaecc063ed54bbf2516e7cc2b2d
                 <p id="p2" className="text-center mb-5 col-12 col-lg-8">
                     அன்பின் அரவணைப்பு அறக்கட்டளை நிர்வாக அறங்காவலர் திரு.பொம்பாய் அவர்களால் 28/10/2020 அன்று ஏகனாபுரம் கிராமம், காஞ்சிபுரம் மாவட்டத்தில் நிறுவப்பட்டுள்ளது. இதன் நோக்கம் நலிந்த
                     வறுமையில் வாடும் மக்கள் நல்வாழ்வு பெறவேண்டும் என்பதற்காக உருவாக்கப்பட்டுள்ளது.
                 </p>
                 <img src={about_image1} alt="" className="img-fluid rounded-5 about-img-1"/>
             </div>
+<<<<<<< HEAD
             <div className=" col-12 d-lg-flex justify-content-center align-items-center gap-lg-5 p-3">
+=======
+            <div className=" col-12 d-lg-flex justify-content-center align-items-center gap-lg-5 p-5">
+>>>>>>> be0176f1cfa24eaecc063ed54bbf2516e7cc2b2d
                 <img src={about_image2} alt="" className="img-fluid rounded-5 mb-5" />
                 <p id="p1" className="text-center  mb-5 col-12 col-lg-8 fw-bold">
                     Anbin Aravanaippu Arakkattalai was Established by Managing Trustee Mr.B.Bombai from 2020, October 28th at the place of Ekanapuram Village Kanchipuram District. Various programs are

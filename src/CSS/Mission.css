@@ -1,10 +1,22 @@
 .mission {
     /* background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249)); */
 
+<<<<<<< HEAD
     background: url("../assets/bg2.jpeg");
     background-position: center;
     background-repeat: repeat;
     background-size: auto;
+=======
+ background: url("../assets/bg2.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+
+}
+
+.sec-1 {
+
+>>>>>>> be0176f1cfa24eaecc063ed54bbf2516e7cc2b2d
 }
 
 .sec-1 > ol {
@@ -12,6 +24,15 @@
     /* backdrop-filter: blur(200px); */
 }
 
+<<<<<<< HEAD
+=======
+.sec-2 {
+    /* background:
+    linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+    url("../assets/bg-logo-1.png") center no-repeat; */
+}
+
+>>>>>>> be0176f1cfa24eaecc063ed54bbf2516e7cc2b2d
 .sec-2 > ol {
     font-family: "Mukta_Malar_bold";
     /* backdrop-filter: blur(200px); */
