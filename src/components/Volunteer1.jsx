@@ -27,7 +27,7 @@ const Volunteer1 = () => {
                 <div className=" col-10 col-sm-8 col-md-6 col-lg-3 text-center">
                     <div className="org-box">
                         <h5 className="fw-bold">B. KAWASKAR</h5>
-                        {/* <p className="mb-0">General Secretary of Trustee</p> */}
+                        
                     </div>
                     <div className="org-connector"></div>
                     <div className="row  d-lg-flex justify-content-center px-4">
