@@ -45,6 +45,18 @@ const ClientSection = () => {
                         <img src={client2} alt="client2" />
                         <img src={client3} alt="client3" />
                         <img src={client4} alt="client4" />
+                        <img src={client1} alt="client1" />
+                        <img src={client2} alt="client2" />
+                        <img src={client3} alt="client3" />
+                        <img src={client4} alt="client4" />
+                        <img src={client1} alt="client1" />
+                        <img src={client2} alt="client2" />
+                        <img src={client3} alt="client3" />
+                        <img src={client4} alt="client4" />
+                        <img src={client1} alt="client1" />
+                        <img src={client2} alt="client2" />
+                        <img src={client3} alt="client3" />
+                        <img src={client4} alt="client4" />
                     </div>
                 </div>
             </div>
