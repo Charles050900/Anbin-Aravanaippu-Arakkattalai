@@ -1,0 +1,9 @@
+.donate-profile{
+    height: 89vh;
+    background: url("../assets/donate-cover.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "NotoSan";
+    background-attachment: fixed;
+}

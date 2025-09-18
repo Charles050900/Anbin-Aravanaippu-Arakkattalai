@@ -4,8 +4,13 @@ import title from "../assets/Donate.png"
 import bank_transfer from "../assets/bank transfer.jpg"
 import blood_donate from "../assets/blood donate.jpg"
 import blood_request from "../assets/blood request.jpg"
+import { useNavigate } from "react-router-dom"
 
 const Donation = () => {
+    let navigate = useNavigate()
+    let goToDonateFunds = () => {
+        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Funds")
+    }
     return (
         <div className="donate row">
             <div className="col-12 my-3 d-flex flex-column justify-content-center align-items-center">
@@ -20,7 +25,9 @@ const Donation = () => {
                             Together we can build brighter futures. <br />
                             Donate now and be part of the change.
                         </p>
-                        <button className="btn btn-primary fw-semibold">Donate</button>
+                        <button className="btn btn-primary fw-semibold" onClick={goToDonateFunds}>
+                            Donate
+                        </button>
                     </div>
                 </div>
                 <div className="card cards d-flex flex-column justify-content-center align-items-center p-4">
@@ -37,7 +44,9 @@ const Donation = () => {
                     <h3 className="text-center fw-bold  text-success">Request for Blood</h3>
                     <img src={blood_request} alt="" height={120} className="m-4" />
                     <div className=" w-100  d-flex flex-column justify-content-center align-items-center">
-                        <p className="text-center fw-semibold text-success">As rain feeds the soil, blood feeds our cells. <br /> Life depends on both to bloom.</p>
+                        <p className="text-center fw-semibold text-success">
+                            As rain feeds the soil, blood feeds our cells. <br /> Life depends on both to bloom.
+                        </p>
                         <button className="btn btn-success fw-semibold ">Request</button>
                     </div>
                 </div>

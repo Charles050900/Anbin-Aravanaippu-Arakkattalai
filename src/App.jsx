@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import DonateFunds from "./components/DonateFunds"
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/Anbin-Aravanaippu-Arakkattalai" element={<Home />} />
+                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Donate-Funds" element={<DonateFunds />} />
                 </Routes>
             </BrowserRouter>
         </>

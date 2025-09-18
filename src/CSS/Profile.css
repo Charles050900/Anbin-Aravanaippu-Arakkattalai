@@ -34,3 +34,7 @@
     }
 }
 
+.carousel-caption .img {
+  animation: none !important;
+  transition: none !important;
+}
