@@ -74,7 +74,8 @@ const Contact = () => {
                                 <label htmlFor="message" className="form-label fw-bold ">
                                     Message
                                 </label>
-                                <textarea id="message" name="message" rows="5" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required />
+                                {/* <textarea id="message" name="message" rows="5" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required /> */}
+                                <input type="text" id="message" name="message" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required />
                             </div>
                             {/* Button */}
                             <div className="d-grid">
@@ -89,10 +90,9 @@ const Contact = () => {
                         <div className="address-details text-white d-lg-flex flex-column justify-content-center align-items-center p-5  fw-bold">
                             <h4 className="text-center fw-bold mb-4">Address</h4>
                             <p className="text-center">
-                                <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffffff" }} /> - Anbin Aravanaippu Arakkattalai,
-                                <br /> No. 91, Mettu Street, Ekanapuram, <br />
-                                Sriperumbudur Taluk, Kanchipuram District <br />
-                                PIN code: 631 553
+                                <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffffff" }} /> - <strong className="fs-5">Anbin Aravanaippu Arakkattalai</strong>,
+                                <br /> No. 91, Mettu Street, Ekanapuram, Sriperumbudur Taluk, <br />
+                                Kanchipuram District - 631 553
                             </p>
                             <p className="text-center">
                                 <FontAwesomeIcon icon={faPhoneVolume} style={{ color: "#ffffffff" }} /> - 9994216991
