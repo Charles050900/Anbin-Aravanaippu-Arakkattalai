@@ -75,7 +75,16 @@ const Contact = () => {
                                     Message
                                 </label>
                                 {/* <textarea id="message" name="message" rows="5" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required /> */}
-                                <input type="text" id="message" name="message" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required />
+                                <textarea
+                                    className="form-control fixed-textarea fw-bold"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Enter your message"
+                                    value={form.message}
+                                    onChange={handleChange}
+                                    required
+                                />
+                                {/* <input type="text" id="message" name="message" className="form-control fw-bold" placeholder="Your message" value={form.message} onChange={handleChange} required /> */}
                             </div>
                             {/* Button */}
                             <div className="d-grid">

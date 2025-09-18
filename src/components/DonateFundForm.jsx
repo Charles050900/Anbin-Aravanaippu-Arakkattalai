@@ -35,7 +35,7 @@ const DonateFundForm = () => {
     }
     return (
         <div className="donate-funds-form p-5 d-flex flex-column justify-content-evenly align-items-center gap-5">
-            <div className="card p-5 rounded-4">
+            <div className="card p-5 rounded-4 shadow-lg">
                 <h2 className="mb-4 text-center fw-bold">How Our Trusts Use Donated Funds</h2>
                 <p className="mb-4 fw-bold text-center">
                     When you donate to our trust, your contribution can support many meaningful initiatives. <br />
@@ -66,7 +66,7 @@ const DonateFundForm = () => {
                 </div> */}
             </div>
 
-            <div className="d-flex flex-column flex-lg-row justify-content-evenly align-items-top gap-5">
+            <div className="d-flex flex-column flex-lg-row justify-content-between align-items-top gap-5">
                 <div className="donate-funds-form-left bg-white px-5 py-3">
                     <h5 className=" text-center fw-bold p-3">For Bank Transfer</h5>
 
@@ -94,7 +94,7 @@ const DonateFundForm = () => {
                     </div>
                 </div>
                 <div className="donate-funds-form-right bg-white p-5">
-                    <h3 className="mb-5 text-center">Bank Transaction Details</h3>
+                    <h3 className="mb-5 text-center fw-bold">Bank Transaction Details</h3>
                     <form onSubmit={handleSubmit} autoComplete="off">
                         <div className="mb-3">
                             <input type="text" className="form-control" id="transactionId" placeholder="Enter Transaction ID" value={formData.transactionId} onChange={handleChange} required />
