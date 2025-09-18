@@ -25,9 +25,7 @@ const Donation = () => {
                             Together we can build brighter futures. <br />
                             Donate now and be part of the change.
                         </p>
-                        <button className="btn btn-primary fw-semibold" onClick={goToDonateFunds}>
-                            Donate
-                        </button>
+                        <button className="btn btn-primary fw-semibold">Donate</button>
                     </div>
                 </div>
                 <div className="card cards d-flex flex-column justify-content-center align-items-center p-4">

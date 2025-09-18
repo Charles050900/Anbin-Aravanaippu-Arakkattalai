@@ -36,18 +36,19 @@
 }
 
 .org-connector {
-    width: 7px;
+    width: 4px;
     background: #007bff;
     height: 50px;
     margin: auto;
 }
 .org-connector-x {
-    height: 7px; /* thickness */
+
+    height: 4px; /* thickness */
     background-color: #007bff; /* or any color you want */
     /* margin-bottom: 20px; */
 }
 .org-connector-y {
-    width: 7px;
+    width: 4px;
     background: #007bff;
     height: 50px;
     margin: auto;

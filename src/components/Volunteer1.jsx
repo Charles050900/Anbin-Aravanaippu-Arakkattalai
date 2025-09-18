@@ -11,7 +11,7 @@ const Volunteer1 = () => {
             </div>
             {/* <!-- B. BOMBAY --> */}
             <div className="row justify-content-center">
-                <div className="col-10 col-sm-8 col-md-6 col-lg-3 text-center">
+                <div className="col-10 col-sm-8 col-md-6 col-lg-2 text-center">
                     <h2 className="mb-5 fw-bold text-white">Organisers</h2>
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
@@ -24,14 +24,15 @@ const Volunteer1 = () => {
 
             {/* <!-- B. KAWASKAR --> */}
             <div className="row justify-content-center">
-                <div className=" col-10 col-sm-8 col-md-6 col-lg-3 text-center">
+                <div className="col-10 col-sm-8 col-md-6 col-lg-2 text-center">
                     <div className="org-box">
+                        {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KAWASKAR</h5>
-                        
+                        {/* <p className="mb-0">General Secretary of Trustee</p> */}
                     </div>
                     <div className="org-connector"></div>
-                    <div className="row  d-lg-flex justify-content-center px-4">
-                        <div className="org-connector-x col-lg-9  "></div>
+                    <div className="row">
+                        <div className="org-connector-x col-lg-12 rounded "></div>
                     </div>
                 </div>
             </div>
@@ -39,7 +40,7 @@ const Volunteer1 = () => {
             {/* <!-- Treasurers --> */}
             <div className="row justify-content-center">
                 <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
-                    <div className="org-connector-y"></div>
+                    <div className="org-connector-y rounded-5"></div>
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">K. KAMALI</h5>
@@ -49,7 +50,7 @@ const Volunteer1 = () => {
                 </div>
 
                 <div className="col-10 col-sm-5 col-md-4 col-lg-2 text-center">
-                    <div className="org-connector-y"></div>
+                    <div className="org-connector-y rounded-5"></div>
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KABILDEV</h5>
