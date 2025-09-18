@@ -26,7 +26,6 @@ const Volunteer1 = () => {
             <div className="row justify-content-center">
                 <div className=" col-10 col-sm-8 col-md-6 col-lg-3 text-center">
                     <div className="org-box">
-                        {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KAWASKAR</h5>
                         {/* <p className="mb-0">General Secretary of Trustee</p> */}
                     </div>
