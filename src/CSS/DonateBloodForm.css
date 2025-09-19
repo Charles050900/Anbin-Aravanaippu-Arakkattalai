@@ -1,0 +1,31 @@
+.blood-form {
+    background: url("../assets/bg2.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.blood-donate-content {
+    border-radius: 20px;
+    border: 7px double #dc3545;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.526);
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.526);
+    }
+}
+.blood-donate-form {
+    border-radius: 20px;
+    border: 7px double #dc3545;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.526);
+    &:hover {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.526);
+    }
+}
+.form-check-input:checked {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+ul.custom-bullets li::marker {
+  color: #dc3545; /* red (Bootstrap “danger”) */
+  font-size: 1.2em; /* optional: make the disc bigger */
+}

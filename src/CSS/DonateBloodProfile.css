@@ -1,0 +1,17 @@
+.donate-blood-profile{
+    height: 89vh;
+    background: url("../assets/blood donate profile.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "NotoSan";
+    background-attachment: fixed;
+}.blood-title{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.blood-caption{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+

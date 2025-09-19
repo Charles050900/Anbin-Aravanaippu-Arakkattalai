@@ -10,6 +10,11 @@ const Donation = () => {
     let navigate = useNavigate()
     let goToDonateFunds = () => {
         navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Funds")
+        window.scrollTo(0, 0)
+    }
+    let goToDonateBlood = () => {
+        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Blood")
+        window.scrollTo(0, 0)
     }
     return (
         <div className="donate row">
@@ -37,7 +42,9 @@ const Donation = () => {
                         <p className="text-center fw-semibold text-danger mb-4">
                             A single pint of blood can save three lives. <br /> Be a hero - donate today.
                         </p>
-                        <button className="btn btn-danger fw-semibold">Donate</button>
+                        <button className="btn btn-danger fw-semibold" onClick={goToDonateBlood}>
+                            Donate
+                        </button>
                     </div>
                 </div>
                 <div className="card cards d-flex flex-column justify-content-center align-items-center p-4">
