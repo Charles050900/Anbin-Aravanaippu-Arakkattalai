@@ -59,7 +59,7 @@ const DonateBloodForm = () => {
 
             {/* Form */}
             <div className="col-md-5 m-4 ">
-                <div className="card p-5 shadow-sm h-100 blood-donate-form">
+                <div className="card p-5  h-100 blood-donate-form">
                     <h4 className="mb-5 text-center text-danger fw-bold">Donor Registration Form</h4>
 
                     <form onSubmit={handleSubmit}>

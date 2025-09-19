@@ -26,6 +26,6 @@
     border-color: #dc3545;
 }
 ul.custom-bullets li::marker {
-  color: #dc3545; /* red (Bootstrap “danger”) */
-  font-size: 1.2em; /* optional: make the disc bigger */
+    color: #dc3545; /* red (Bootstrap “danger”) */
+    font-size: 1.2em; /* optional: make the disc bigger */
 }
