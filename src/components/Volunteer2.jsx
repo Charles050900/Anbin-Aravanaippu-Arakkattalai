@@ -40,13 +40,19 @@ const Volunteer2 = () => {
                 <div className="col-md-6 mb-4 d-flex justify-content-lg-end justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
                         <h5 className="mb-1 fw-bold">M. Jabadurai</h5>
-                        <p className="mb-0">Member of Board / Advocate</p>
+                        <p className="mb-0">
+                            Advocate
+                            <br />
+                            Member of Board
+                        </p>
                     </div>
                 </div>
                 <div className="col-md-6 mb-4  d-flex justify-content-lg-start justify-content-center">
                     <div className="card p-3 w-50 shadow rounded text-center">
                         <h5 className="mb-1 fw-bold">Mr. Subhash</h5>
-                        <p className="mb-0">CEO at Sendhamarai Engineering Private Limited</p>
+                        <p className="mb-0">
+                            Chief Executive Officer <br /> Sendhamarai Engineering Private Limited
+                        </p>
                     </div>
                 </div>
                 <div className="col-md-6 mb-3 d-flex justify-content-lg-end justify-content-center">

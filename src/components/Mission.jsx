@@ -35,14 +35,14 @@ const Mission = () => {
                     </ol>
                 </div>
                 <div className="col-lg-3 text-center  order-1 order-lg-2 mb-4 mb-lg-0 d-lg-flex justify-content-center">
-                    <img src={pic1} alt="Mission Pic 1" className="img-fluid rounded mission-pic-1" style={{ height: "250px" }} />
+                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded  mission-pic-2" style={{ height: "250px" }} />
                 </div>
             </div>
 
             {/* Second Section */}
             <div className={`row align-items-center`}>
                 <div className="col-lg-3 text-center mb-4 mb-lg-0 mission_left_img p-5">
-                    <img src={pic2} alt="Mission Pic 2" className="img-fluid rounded  mission-pic-2" style={{ height: "250px" }} />
+                    <img src={pic1} alt="Mission Pic 1" className="img-fluid rounded mission-pic-1" style={{ height: "250px" }} />
                 </div>
                 <div className="col-lg-9 sec-2 text-white">
                     <ol>

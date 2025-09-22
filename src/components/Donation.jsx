@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "../CSS/Donation.css"
 import title from "../assets/Donate.png"
 import bank_transfer from "../assets/bank transfer.jpg"
@@ -7,14 +7,15 @@ import blood_request from "../assets/blood request.jpg"
 import { useNavigate } from "react-router-dom"
 
 const Donation = () => {
-    let navigate = useNavigate()
-    let goToDonateFunds = () => {
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Funds")
-        window.scrollTo(0, 0)
+    const navigate = useNavigate()
+
+    const goToDonateFunds = () => {
+        sessionStorage.setItem("fundScrollY", window.scrollY)
+        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Funds") // or whatever route you use
     }
-    let goToDonateBlood = () => {
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Blood")
-        window.scrollTo(0, 0)
+    const goToDonateBlood = () => {
+        sessionStorage.setItem("fundScrollY", window.scrollY)
+        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Blood") // or whatever route you use
     }
     return (
         <div className="donate row">

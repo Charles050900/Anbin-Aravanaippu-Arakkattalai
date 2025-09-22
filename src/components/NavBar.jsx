@@ -7,7 +7,7 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
 const NavBar = ({ scrollToSection, refs }) => {
     return (
-        <nav className="navbar navbar-expand-lg  border-bottom border-3 border-primary">
+        <nav className={`navbar navbar-expand-lg  border-bottom border-3 border-primary`}>
             <Vortex particleCount={50} colors={["#f228abff", "#0059ffff"]} speedFactor={0.02} />
             <div className="container-fluid">
                 {/* Use a flex container to align the image and text */}

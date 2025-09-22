@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import "../CSS/DonateFundsForm.css"
 import donation_pic from "../assets/donation pic wobg.png"
 import { height } from "@fortawesome/free-brands-svg-icons/faChromecast"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { useNavigate } from "react-router-dom"
 const DonateFundForm = () => {
     const [formData, setFormData] = useState({
         transactionId: "",
@@ -32,6 +35,11 @@ const DonateFundForm = () => {
           contactNo: "",
           message: "",
         });
+    }
+    let navigate = useNavigate()
+
+    let fundProviousPage = () => {
+        navigate(-1)
     }
     return (
         <div className="donate-funds-form p-5 d-flex flex-column justify-content-evenly align-items-center gap-5">
@@ -124,6 +132,7 @@ const DonateFundForm = () => {
                     </form>
                 </div>
             </div>
+            
         </div>
     )
 }

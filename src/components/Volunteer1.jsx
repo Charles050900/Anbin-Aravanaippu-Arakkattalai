@@ -11,12 +11,12 @@ const Volunteer1 = () => {
             </div>
             {/* <!-- B. BOMBAY --> */}
             <div className="row justify-content-center">
-                <div className="col-10 col-sm-8 col-md-6 col-lg-2 text-center">
+                <div className="col-10 col-sm-8 col-md-6 col-lg-3 text-center">
                     <h2 className="mb-5 fw-bold text-white">Organisers</h2>
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold ">B. BOMBAY</h5>
-                        {/* <p className="mb-0">Founder & President of Trustee</p> */}
+                        <p className="mb-0">Founder & President of Trustee</p>
                     </div>
                     <div className="org-connector"></div>
                 </div>
@@ -24,15 +24,16 @@ const Volunteer1 = () => {
 
             {/* <!-- B. KAWASKAR --> */}
             <div className="row justify-content-center">
-                <div className="col-10 col-sm-8 col-md-6 col-lg-2 text-center">
+                <div className="col-10 col-sm-8 col-md-6 col-lg-3 text-center">
                     <div className="org-box">
                         {/* <img src={pic} alt="" className="img-fluid w-50 rounded-4 mb-4" /> */}
                         <h5 className="fw-bold">B. KAWASKAR</h5>
-                        {/* <p className="mb-0">General Secretary of Trustee</p> */}
+                        <p className="mb-0">General Secretary of Trustee</p>
                     </div>
                     <div className="org-connector"></div>
                     <div className="row">
-                        <div className="org-connector-x col-lg-12 rounded "></div>
+                        <div className="col-lg-2"></div>
+                        <div className="org-connector-x col-lg-8 rounded "></div>
                     </div>
                 </div>
             </div>
