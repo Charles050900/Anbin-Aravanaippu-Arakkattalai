@@ -80,6 +80,15 @@ const Volunteer2 = () => {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                <div className="col d-lg-flex justify-content-center">
+                    {/* Top Advisory */}
+                    <div className="card py-3 px-5  mb-3 shadow rounded text-center box">
+                        <h5 className="mb-1 fw-bold">Charles Bellarmin</h5>
+                        <p className="mb-0">IT Support</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
