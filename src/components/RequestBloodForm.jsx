@@ -133,7 +133,7 @@ const RequestBloodForm = () => {
                 {/* Form */}
                 <form className="text-white d-flex flex-column justify-content-center align-items-center" onSubmit={handleSubmit}>
                     {/* Blood Type */}
-                    <div className="mb-4 col-4">
+                    <div className="mb-4 col-md-4">
                         <label className="form-label fw-semibold">Blood Type</label>
                         <select className="form-select" name="bloodType" value={formData.bloodType} onChange={handleChange} required>
                             <option value="">Select Blood Type</option>
@@ -149,7 +149,7 @@ const RequestBloodForm = () => {
                     </div>
 
                     {/* District Dropdown */}
-                    <div className="mb-4 col-4">
+                    <div className="mb-4 col-md-4">
                         <label className="form-label fw-semibold">District</label>
                         <select className="form-select" name="district" value={formData.district} onChange={handleChange} required>
                             <option value="">Select District</option>
@@ -162,8 +162,8 @@ const RequestBloodForm = () => {
                     </div>
 
                     {/* Submit */}
-                    <div className="text-center col-4">
-                        <button type="submit" className="btn btn-light col-3 fw-semibold">
+                    <div className="text-center col-md-4">
+                        <button type="submit" className="btn btn-light col-md-3 fw-semibold">
                             Search
                         </button>
                     </div>
