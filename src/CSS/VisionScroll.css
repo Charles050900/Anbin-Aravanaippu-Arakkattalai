@@ -1,0 +1,19 @@
+.vision-pics {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  /* no CSS animation; JS handles the seamless scroll */
+}
+
+.scroll-track img {
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+}

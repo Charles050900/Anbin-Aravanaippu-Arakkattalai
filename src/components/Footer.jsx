@@ -7,9 +7,14 @@ const Footer = ({ scrollToSection, refs }) => {
             <div className="px-5">
                 <div className="row align-items-center">
                     {/* Logo + Name */}
-                    <div className="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        <img src={logo} alt="NGO Logo" className="footer-logo" style={{ width: "50px", marginRight: "10px" }} />
-                        <span className="fw-bolder fst-italic ">அன்பின் அரவணைப்பு அறக்கட்டளை</span>
+                    <div className="col-md-4 text-center text-md-start mb-3 mb-md-0 d-flex flex-column justify-content-center align-items-center gap-3">
+                        <div>
+                            <img src={logo} alt="NGO Logo" className="footer-logo" style={{ width: "50px", marginRight: "10px" }} />
+                            <span className="fw-bolder fst-italic ">அன்பின் அரவணைப்பு அறக்கட்டளை</span>
+                        </div>
+                        <div>
+
+                        </div>
                     </div>
 
                     {/* Links */}

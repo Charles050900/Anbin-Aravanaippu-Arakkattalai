@@ -1,11 +1,10 @@
 import React from "react"
 import title from "../assets/Services.png"
 import "../CSS/Service.css"
-import NightStudy from "../assets/Night Study.png"
-import FreeEquipment from "../assets/carousel-4.jpg"
+import NightStudy from "../assets/Night Study.jpg"
+import FreeEquipment from "../assets/Free Equipment.jpg"
 import FreeProjector from "../assets/Projector.jpg"
 import FreeSelfDefence from "../assets/Free Self Defence.jpg"
-import pic from "../assets/Night Study.png"
 
 const Service = () => {
     return (
@@ -16,13 +15,13 @@ const Service = () => {
                     <div className="flip-container">
                         <div className="flip-card">
                             <div className="flip-front">
-                                <div className="card h-100 ">
+                                <div className="card ">
                                     <img src={NightStudy} className="card-img-top h-75" alt="..." />
                                     <div className="card-body  d-flex justify-content-center align-items-center">
                                         <h5 className="card-title">
                                             Free Evening Education
                                             <br />
-                                            (இலவச மாலைநேர கல்வி)
+                                            (மாணவர்களுக்கு இலவச மாலைநேர கல்வி)
                                         </h5>
                                     </div>
                                 </div>
@@ -121,7 +120,7 @@ const Service = () => {
                                         <h5 className="card-title">
                                             Free Evening Education
                                             <br />
-                                            (இலவச மாலைநேர கல்வி)
+                                            (மாணவர்களுக்கு இலவச மாலைநேர கல்வி)
                                         </h5>
                                     </div>
                                 </div>

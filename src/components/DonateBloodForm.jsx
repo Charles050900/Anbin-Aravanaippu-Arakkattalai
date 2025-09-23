@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import '../CSS/DonateBloodForm.css'
-import blood_donate_image from '../assets/blood donation image wobg.png'
+import "../CSS/DonateBloodForm.css"
+import blood_donate_image from "../assets/blood donation image wobg.png"
 
 const DonateBloodForm = () => {
     const [formData, setFormData] = useState({
@@ -9,11 +9,7 @@ const DonateBloodForm = () => {
         bloodGroup: "",
         mobile: "",
         email: "",
-        address: "",
-        location: "",
-        availability: "",
-        history: "",
-        medical: "",
+        district: "",
         agree: false,
     })
 
@@ -24,9 +20,50 @@ const DonateBloodForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         alert("Thank you for pledging to donate blood!")
     }
+
+    // Tamil Nadu districts
+    const districts = [
+        "Ariyalur",
+        "Chengalpattu",
+        "Chennai",
+        "Coimbatore",
+        "Cuddalore",
+        "Dharmapuri",
+        "Dindigul",
+        "Erode",
+        "Kallakurichi",
+        "Kanchipuram",
+        "Karur",
+        "Krishnagiri",
+        "Madurai",
+        "Mayiladuthurai",
+        "Nagapattinam",
+        "Kanyakumari",
+        "Namakkal",
+        "Perambalur",
+        "Pudukottai",
+        "Ramanathapuram",
+        "Ranipet",
+        "Salem",
+        "Sivaganga",
+        "Tenkasi",
+        "Thanjavur",
+        "Theni",
+        "Thiruvallur",
+        "Thiruvarur",
+        "Thoothukudi",
+        "Tiruchirappalli",
+        "Tirunelveli",
+        "Tirupathur",
+        "Tiruppur",
+        "Tiruvannamalai",
+        "The Nilgiris",
+        "Vellore",
+        "Villupuram",
+        "Virudhunagar",
+    ]
 
     return (
         <div className="container-fluid p-lg-5 py-3 blood-form d-flex flex-column flex-lg-row justify-content-evenly gap-5 ">
@@ -43,9 +80,6 @@ const DonateBloodForm = () => {
                     <blockquote className="blockquote mb-2">
                         <p className="mb-0">“Your blood is replaceable, someone’s life isn’t.”</p>
                     </blockquote>
-                    {/* <blockquote className="blockquote">
-                        <p className="mb-0">“A drop of kindness can fill a heart with life.”</p>
-                    </blockquote> */}
                     <ul className="mt-3 custom-bullets">
                         <li>Age 18 - 65, minimum 50 kg</li>
                         <li>Healthy on the day of donation</li>
@@ -64,15 +98,18 @@ const DonateBloodForm = () => {
 
                     <form onSubmit={handleSubmit}>
                         <div className="row">
-                            <div className="col-md-6 mb-3">
+                            <div className="col mb-3">
                                 <label className="form-label">Full Name</label>
                                 <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="form-control" required />
                             </div>
-                            <div className="col-md-3 mb-3">
+                        </div>
+
+                        <div className="row">
+                            <div className="col-md-6 mb-3">
                                 <label className="form-label">Age</label>
                                 <input type="text" name="age" value={formData.age} onChange={handleChange} className="form-control" required />
                             </div>
-                            <div className="col-md-3 mb-3">
+                            <div className="col-md-6 mb-3">
                                 <label className="form-label">Blood Group</label>
                                 <select name="bloodGroup" value={formData.bloodGroup} onChange={handleChange} className="form-select" required>
                                     <option value="">Select</option>
@@ -99,15 +136,15 @@ const DonateBloodForm = () => {
                         </div>
 
                         <div className="mb-3">
-                            <label className="form-label">Address / City</label>
-                            <input type="text" name="address" value={formData.address} onChange={handleChange} className="form-control" required />
-                        </div>
-
-                        <div className="row">
-                            <div className="mb-4">
-                                <label className="form-label">Preferred Location</label>
-                                <input type="text" name="location" value={formData.location} onChange={handleChange} className="form-control" required />
-                            </div>
+                            <label className="form-label">District</label>
+                            <select name="district" value={formData.district} onChange={handleChange} className="form-select" required>
+                                <option value="">Select District</option>
+                                {districts.map((dist, idx) => (
+                                    <option key={idx} value={dist}>
+                                        {dist}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
 
                         <div className="form-check mb-5">
@@ -124,9 +161,6 @@ const DonateBloodForm = () => {
                 </div>
             </div>
         </div>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 

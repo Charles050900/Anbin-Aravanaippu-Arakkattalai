@@ -18,7 +18,7 @@ const Mission = () => {
                         <li>Benefiting the vulnerable communities through government schemes for their welfare.</li>
                         <li>Fighting for the rights of women in society.</li>
                         <li>Striving for the economic development of the people below the poverty line.</li>
-                        <li>
+                        <li >
                             To create awareness among the people living in abject poverty throughout Tamil Nadu about the welfare schemes of the government village by village for their livelihood.
                         </li>
                         <li>

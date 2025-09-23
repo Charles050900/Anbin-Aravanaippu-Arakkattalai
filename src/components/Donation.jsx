@@ -17,6 +17,10 @@ const Donation = () => {
         sessionStorage.setItem("fundScrollY", window.scrollY)
         navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Blood") // or whatever route you use
     }
+    const goToRequestBlood = () => {
+        sessionStorage.setItem("fundScrollY", window.scrollY)
+        navigate("/Anbin-Aravanaippu-Arakkattalai/Request-Blood") // or whatever route you use
+    }
     return (
         <div className="donate row">
             <div className="col-12 my-3 d-flex flex-column justify-content-center align-items-center">
@@ -55,7 +59,9 @@ const Donation = () => {
                         <p className="text-center fw-semibold text-success">
                             As rain feeds the soil, blood feeds our cells. <br /> Life depends on both to bloom.
                         </p>
-                        <button className="btn btn-success fw-semibold ">Request</button>
+                        <button className="btn btn-success fw-semibold " onClick={goToRequestBlood}>
+                            Request
+                        </button>
                     </div>
                 </div>
             </div>
