@@ -86,8 +86,8 @@ const Volunteer2 = () => {
                         </div>
 
                         <div className=" d-flex flex-column justify-content-center align-items-center">
-                            <p className="text-center  fw-bold text-primary mb-">"The best way to find yourself is to lose yourself in the service of others."</p>
-                            <p className="card-text text-center text-secondary mb-">Join our community and be a part of a brighter future.</p>
+                            <p className="text-center  fw-bold text-primary mb-">The best way to find yourself is to lose yourself in the service of others</p>
+                            <p className="card-text text-center text-secondary mb-">Join our community and be a part of a brighter future</p>
                             <button className="btn btn-primary ">Register Now</button>
                         </div>
                     </div>

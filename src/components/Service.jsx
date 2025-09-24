@@ -97,7 +97,7 @@ const Service = () => {
                     <div className="flip-card">
                         <div className="flip-front">
                             <div className="card fixed-card">
-                                <img src={NightStudy} className="card-img-top fixed-img" alt="..." />
+                                <img src={FreeSelfDefence} className="card-img-top fixed-img" alt="..." />
                                 <div className="card-body d-flex flex-column justify-content-center align-items-center">
                                     <h5 className="card-title text-center">Free Self-Defence Training</h5>
                                     <h5 className="card-title text-center">மாணவர்களுக்கு இலவச சுய பாதுகாப்பு பயிற்சி</h5>
