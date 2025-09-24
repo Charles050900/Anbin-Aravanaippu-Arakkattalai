@@ -26,6 +26,7 @@
   perspective: 1000px;
   width: 100%;
   position: relative;
+  ;
 }
 
 .flip-card {
@@ -33,6 +34,8 @@
   width: 100%;
   transform-style: preserve-3d;
   transition: transform 0.8s;
+    box-shadow: 10px 15px 7px rgba(16, 16, 16, 0.962);;
+
 }
 
 @media (hover: hover) {
