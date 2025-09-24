@@ -33,7 +33,7 @@
   position: relative;
   width: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform 0.5s;
     box-shadow: 10px 15px 7px rgba(16, 16, 16, 0.962);;
 
 }

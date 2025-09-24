@@ -21,6 +21,16 @@ const DonateBloodForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         alert("Thank you for pledging to donate blood!")
+
+        setFormData({
+            fullName: "",
+            age: "",
+            bloodGroup: "",
+            mobile: "",
+            email: "",
+            district: "",
+            agree: false,
+        })
     }
 
     // Tamil Nadu districts
@@ -135,7 +145,7 @@ const DonateBloodForm = () => {
                             <input type="email" name="email" value={formData.email} onChange={handleChange} className="form-control" required />
                         </div>
 
-                        <div className="mb-3">
+                        <div className="mb-5">
                             <label className="form-label">District</label>
                             <select name="district" value={formData.district} onChange={handleChange} className="form-select" required>
                                 <option value="">Select District</option>

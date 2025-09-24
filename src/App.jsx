@@ -9,6 +9,7 @@ import DonateFunds from "./components/DonateFunds"
 import DonateBlood from "./components/DonateBlood"
 import ScrollToTop from "./components/ScrollToTop"
 import RequestBlood from "./components/RequestBlood"
+import VolunteerRegistration from "./components/VolunteerRegistration"
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/Anbin-Aravanaippu-Arakkattalai/Donate-Funds" element={<DonateFunds />} />
                     <Route path="/Anbin-Aravanaippu-Arakkattalai/Donate-Blood" element={<DonateBlood />} />
                     <Route path="/Anbin-Aravanaippu-Arakkattalai/Request-Blood" element={<RequestBlood />} />
+                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Volunteer-Registration" element={<VolunteerRegistration />} />
                 </Routes>
             </BrowserRouter>
         </>
