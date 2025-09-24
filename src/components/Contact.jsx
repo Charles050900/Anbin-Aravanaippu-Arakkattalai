@@ -18,7 +18,7 @@ const Contact = () => {
         setForm((prev) => ({ ...prev, [name]: value }))
     }
     const handleSendMail = () => {
-        window.location.href = "mailto:aaa28102020@gmail.com?subject=Hello&body=I%20want%20to%20contact%20you."
+        window.location.href = "mailto:aaa28102020@gmail.com?subject=New%20Enquiry&body=Type%20your%20query%20here."
     }
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -96,7 +96,7 @@ const Contact = () => {
                     </div>
 
                     <div className="col-lg-6 col-md-4 d-lg-flex flex-column justify-content-center align-items-center mt-5 address ">
-                        <div className="address-details text-white d-lg-flex flex-column justify-content-center align-items-center p-5  fw-bold">
+                        <div className="address-details text-white d-lg-flex flex-column justify-content-center align-items-center p-4 p-md-5  fw-bold">
                             <h4 className="text-center fw-bold mb-4">Address</h4>
                             <p className="text-center">
                                 <FontAwesomeIcon icon={faLocationDot} style={{ color: "#ffffffff" }} /> - <strong className="fs-5">Anbin Aravanaippu Arakkattalai</strong>,
