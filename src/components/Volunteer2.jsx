@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import BoardMemberitle from "../assets/Board Members.png"
-import memberpic from '../assets/members.jpg'
+import memberpic from '../assets/volunteers.jpg'
 
 
 const Volunteer2 = () => {
@@ -79,7 +79,9 @@ const Volunteer2 = () => {
                 <div className="col-md-5 ">
                     <div className="member-card bg-white rounded-5 py-4 px-4 px-lg-0  d-flex flex-column justify-content-center align-items-center ">
                         <h4 className="text-center fw-bolder text-primary ">Become a Member</h4>
-                        <img src={memberpic} alt="" height={200} className="my-4 rounded-pill" />
+
+                            <img src={memberpic} alt="" height={200} width={300} className="my-4 rounded-pill " />
+
                         <div className=" d-flex flex-column justify-content-center align-items-center">
                             <p className="text-center  fw-bold text-primary mb-">"The best way to find yourself is to lose yourself in the service of others."</p>
                             <p className="card-text text-center text-secondary mb-">Join our community and be a part of a brighter future.</p>

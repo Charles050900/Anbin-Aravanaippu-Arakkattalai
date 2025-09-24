@@ -78,9 +78,9 @@ const Vision = () => {
                 <p className="fw-bold">அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
             </div>
 
-            <VisionScrollFromRight images={images1} speed={2} />
+            <VisionScrollFromRight images={images1} speed={1} />
             <VisionScrollFromLeft images={images2} speed={2} />
-            <VisionScrollFromRight images={images3} speed={2} />
+            <VisionScrollFromRight images={images3} speed={1} />
         </div>
     )
 }
