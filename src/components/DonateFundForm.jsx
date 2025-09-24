@@ -26,15 +26,13 @@ const DonateFundForm = () => {
         e.preventDefault()
         window.alert("Form submitted successfully!")
 
-
-
         setFormData({
-          transactionId: "",
-          amount: "",
-          payerName: "",
-          contactNo: "",
-          message: "",
-        });
+            transactionId: "",
+            amount: "",
+            payerName: "",
+            contactNo: "",
+            message: "",
+        })
     }
     let navigate = useNavigate()
 
@@ -44,30 +42,30 @@ const DonateFundForm = () => {
     return (
         <div className="donate-funds-form p-5 d-flex flex-column justify-content-evenly align-items-center gap-5">
             <div className="card p-5 rounded-4 shadow-lg">
-                <h2 className="mb-4 text-center fw-bold">How Our Trusts Use Donated Funds</h2>
-                <p className="mb-4 fw-bold text-center">
+                <h3 className="mb-4 text-center fw-bold">How Our Trusts Use Donated Funds</h3>
+                <p className="mb-4 fw-bold text-center ">
                     When you donate to our trust, your contribution can support many meaningful initiatives. <br />
                     Here are some common areas where funds are used:
                 </p>
 
-                <ul className="list-group list-group-flush">
+                <ol className="list-group text-center list-group-numbered">
                     <li className="list-group-item">
-                        <strong>Welfare and Relief:</strong> Food, clothing, shelter, disaster relief, and medical camps for those in need.
+                        <strong>Education</strong>
                     </li>
                     <li className="list-group-item">
-                        <strong>Education:</strong> Scholarships, school supplies, libraries, and training programs for students and teachers.
+                        <strong>Healthcare</strong>
                     </li>
                     <li className="list-group-item">
-                        <strong>Healthcare:</strong> Free check-ups, blood donation drives, medicines, and setting up clinics or mobile hospitals.
+                        <strong>Environment</strong>
                     </li>
                     <li className="list-group-item">
-                        <strong>Community Development:</strong> Building wells, toilets, community halls, women’s self-help groups, and awareness programs.
+                        <strong>Welfare and Relief</strong>
                     </li>
                     <li className="list-group-item">
-                        <strong>Environment:</strong> Tree planting, cleaning water bodies, waste management, and promoting renewable energy.
+                        <strong>Community Development</strong>
                     </li>
-                    <li className="list-group-item"></li>
-                </ul>
+                    {/* <li className="list-group-item"></li> */}
+                </ol>
 
                 {/* <div className="alert alert-info mt-4 mb-0">
                     <strong>Tip:</strong> Before donating, check if the trust is registered (e.g., 12A/80G in India) and ask for receipts or reports on how funds are used.
@@ -132,7 +130,6 @@ const DonateFundForm = () => {
                     </form>
                 </div>
             </div>
-            
         </div>
     )
 }
