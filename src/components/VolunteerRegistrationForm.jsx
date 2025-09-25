@@ -27,7 +27,8 @@ const VolunteerRegistrationForm = () => {
         phone: "",
         district: "",
         bloodGroup: "",
-        agree: false,
+        bloodDonate: false,
+        joinTrust: false,
     })
 
     const districts = [
@@ -91,7 +92,8 @@ const VolunteerRegistrationForm = () => {
             phone: "",
             district: "",
             bloodGroup: "",
-            agree: false,
+            bloodDonate: false,
+            joinTrust: false,
         })
     }
 
@@ -148,9 +150,13 @@ const VolunteerRegistrationForm = () => {
                                     ))}
                                 </select>
                             </div>
+                            <div className="mb-3 form-check fw-semibold">
+                                <input type="checkbox" className="form-check-input register-check" name="joinTrust" checked={formData.joinTrust} onChange={handleChange} />
+                                <label className="form-check-label">I wish to join the trust and work together.</label>
+                            </div>
                             <div className="mb-5 form-check fw-semibold">
-                                <input type="checkbox" className="form-check-input register-check" name="agree" checked={formData.agree} onChange={handleChange} />
-                                <label className="form-check-label">I am willing to donate blood</label>
+                                <input type="checkbox" className="form-check-input register-check" name="bloodDonate" checked={formData.bloodDonate} onChange={handleChange} />
+                                <label className="form-check-label">I agree to donate blood when needed.</label>
                             </div>
                             <div className=" d-flex justify-content-center align-items-center">
                                 <button type="submit" className="btn btn-primary">

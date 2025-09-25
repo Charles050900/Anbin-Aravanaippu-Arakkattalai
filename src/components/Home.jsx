@@ -14,6 +14,7 @@ import Contact from "./Contact"
 import Map from "./Map"
 import Footer from "./Footer"
 import Donation from "./Donation"
+import BecomeVolunteer from "./BecomeVolunteer"
 
 const Home = () => {
     const NavRef = useRef(null)
@@ -33,7 +34,10 @@ const Home = () => {
     return (
         <>
             <div ref={NavRef}>
-                <NavBar scrollToSection={scrollToSection} refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef, DonateRef }} />
+                <NavBar
+                    scrollToSection={scrollToSection}
+                    refs={{ NavRef, HomeRef, aboutRef, ProfileRef, VisionRef, MissionRef, ServiceRef, VolunteerRef, ContactRef, DonateRef }}
+                />
             </div>
             <div ref={HomeRef}>
                 <Profile />
@@ -41,9 +45,6 @@ const Home = () => {
             <div ref={aboutRef}>
                 <About />
             </div>
-            {/* <div ref={ProfileRef}>
-                <Details />
-            </div> */}
             <div ref={VisionRef}>
                 <Vision />
             </div>
@@ -53,10 +54,11 @@ const Home = () => {
             <div ref={ServiceRef}>
                 <Service />
             </div>
-            <div ref={VolunteerRef}>
-                <Volunteer1 />
-            </div>
+            <Volunteer1 />
             <Volunteer2 />
+            <div ref={VolunteerRef}>
+                <BecomeVolunteer />
+            </div>
             <Clients />
             <div ref={ContactRef}>
                 <Contact />
