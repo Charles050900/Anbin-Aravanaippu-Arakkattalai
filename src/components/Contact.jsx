@@ -23,6 +23,11 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        if (!form.name || !form.email || !form.phone || !form.message) {
+            alert("Please fill in all fields.")
+            return
+        }
+
         let today = new Date()
         const pad = (n) => n.toString().padStart(2, "0")
 
