@@ -3,7 +3,7 @@ import "../CSS/Contact.css"
 import title from "../assets/Contact.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faLocationDot, faPhoneVolume } from "@fortawesome/free-solid-svg-icons"
-import { height } from "@fortawesome/free-brands-svg-icons/faChromecast"
+import axios from "axios"
 
 const Contact = () => {
     const [form, setForm] = useState({
@@ -20,10 +20,37 @@ const Contact = () => {
     const handleSendMail = () => {
         window.location.href = "mailto:aaa28102020@gmail.com?subject=New%20Enquiry&body=Type%20your%20query%20here."
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log("Form submitted:", form)
-        // Hook into API or email service here
+
+        let today = new Date()
+        const pad = (n) => n.toString().padStart(2, "0")
+
+        const day = pad(today.getDate())
+        const month = pad(today.getMonth() + 1) // Months are 0-based
+        const year = today.getFullYear()
+
+        const hours = pad(today.getHours())
+        const minutes = pad(today.getMinutes())
+        const seconds = pad(today.getSeconds())
+        let date = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
+        let payload = {
+            senderName: form.name,
+            senderEmail: form.email,
+            senderPhoneNo: form.phone,
+            senderMessage: form.message,
+            createdAt: date,
+        }
+        try {
+            let response = await axios.post("https://anbin-aravanaippi-arakkattalai-50034004215.development.catalystappsail.in/contact/submit", payload, {
+                withCredentials: true, // only if backend uses cookies
+                headers: { "Content-Type": "application/json" },
+            })
+            console.log(response)
+        } catch (error) {
+            console.log(error)
+        }
+
         alert("Thank you! We received your message.")
         setForm({ name: "", email: "", message: "", phone: "" })
     }
@@ -35,7 +62,7 @@ const Contact = () => {
             <div className=" w-100">
                 <div className="row gap-lg-3 gap-md-3 justify-content-center">
                     <div className="col-md-8 col-lg-4 p-lg-5 form-outer  d-flex justify-content-center">
-                        <form onSubmit={handleSubmit} className="form  mt-5 p-4 w-75">
+                        <form className="form  mt-5 p-4 w-75">
                             {/* Name */}
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label fw-bold">
@@ -88,7 +115,7 @@ const Contact = () => {
                             </div>
                             {/* Button */}
                             <div className="d-grid">
-                                <button type="submit" className="message-button p-1 border-0 rounded fw-bold">
+                                <button type="submit" className="message-button p-1 border-0 rounded fw-bold" onClick={handleSubmit}>
                                     Send Message
                                 </button>
                             </div>
