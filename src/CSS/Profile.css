@@ -9,7 +9,12 @@
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
 }
-
+.profile-bg{
+     background: url("../assets/bg2.jpeg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+}
 .carousel-content {
     color: rgb(1, 91, 181);
     /* text-shadow: 2px 0px 2px white; */
@@ -35,6 +40,6 @@
 }
 
 .carousel-caption .img {
-  animation: none !important;
-  transition: none !important;
+    animation: none !important;
+    transition: none !important;
 }

@@ -13,12 +13,12 @@ const Mission = () => {
 
             {/* First Section */}
             <div className={`row align-items-center mb-5 `}>
-                <div className="col-lg-9 order-2 order-lg-1 sec-1  ps-5 py-4 text-white">
+                <div className="col-lg-9 order-2 order-lg-1 sec-1  ps-5 py-4 text-white  ">
                     <ol>
                         <li>Benefiting the vulnerable communities through government schemes for their welfare.</li>
                         <li>Fighting for the rights of women in society.</li>
                         <li>Striving for the economic development of the people below the poverty line.</li>
-                        <li >
+                        <li>
                             To create awareness among the people living in abject poverty throughout Tamil Nadu about the welfare schemes of the government village by village for their livelihood.
                         </li>
                         <li>

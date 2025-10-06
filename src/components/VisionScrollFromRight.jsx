@@ -28,7 +28,7 @@ const VisionScrollFromRight = ({ images = [], speed = 2 }) => {
     }, [images, speed, isPaused])
 
     return (
-        <div className="vision-pics rounded-4 mb-4" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} style={{ overflow: "hidden", width: "100%", position: "relative" }}>
+        <div className="vision-pics rounded-4 mb-4 " onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} style={{ overflow: "hidden", width: "100%", position: "relative" }}>
             <div className="scroll-track" ref={trackRef} style={{ display: "flex", gap: "20px" }}>
                 {[...images, ...images].map((img, index) => (
                     <img

@@ -70,7 +70,7 @@ const Vision = () => {
     const images2 = [vision11, vision12, vision13, vision14, vision15, vision16, vision17, vision18, vision19, vision20]
     const images3 = [vision21, vision22, vision23, vision24, vision25, vision26, vision27, vision28, vision29, vision30, vision31, vision32, vision33, vision34, vision35, vision36]
     return (
-        <div className="vision  text-white pb-5">
+        <div className="vision  text-white pb-5 px-4 p-lg-5">
             {/* <h1>Vision</h1> */}
             <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={title} alt="" className="mb-4" />
