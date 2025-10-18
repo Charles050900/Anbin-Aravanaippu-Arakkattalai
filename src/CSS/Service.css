@@ -78,3 +78,7 @@
   width: 100%;           /* full width */
   object-fit: cover;     /* crop instead of stretching */
 }
+.service-details {
+    text-align: center;
+    font-family: 'Mukta_Malar_bold';
+}
