@@ -74,8 +74,8 @@ const Vision = () => {
             {/* <h1>Vision</h1> */}
             <div ref={leftRef} className={`vision-notes floating-up ${leftVisible ? "visible" : ""}`}>
                 <img src={title} alt="" className="mb-4" />
-                <p className="fw-bold">Everyone should have access to everything and everyone should live equally.</p>
-                <p className="fw-bold">அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
+                <p className="fw-bold text-center">Everyone should have access to everything and everyone should live equally.</p>
+                <p className="fw-bold text-center">அனைவருக்கும் அனைத்தும் கிடைக்கவேண்டும், அனைவரும் சமநிலையில் வாழவேண்டும்</p>
             </div>
 
             <VisionScrollFromRight images={images1} speed={1} />

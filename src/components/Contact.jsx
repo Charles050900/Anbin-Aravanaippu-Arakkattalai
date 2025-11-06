@@ -27,37 +27,38 @@ const Contact = () => {
             alert("Please fill in all fields.")
             return
         }
+        const d = new Date()
 
-        let today = new Date()
-        const pad = (n) => n.toString().padStart(2, "0")
+        const pad = (n) => String(n).padStart(2, "0")
 
-        const day = pad(today.getDate())
-        const month = pad(today.getMonth() + 1) // Months are 0-based
-        const year = today.getFullYear()
+        const day = pad(d.getDate())
+        const month = pad(d.getMonth() + 1) // months are 0-indexed
+        const year = d.getFullYear()
 
-        const hours = pad(today.getHours())
-        const minutes = pad(today.getMinutes())
-        const seconds = pad(today.getSeconds())
-        let date = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
+        const hours = pad(d.getHours())
+        const minutes = pad(d.getMinutes())
+        const seconds = pad(d.getSeconds())
+
+        const finaldate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
+
         let payload = {
             senderName: form.name,
             senderEmail: form.email,
             senderPhoneNo: form.phone,
             senderMessage: form.message,
-            createdAt: date,
-        }
-        try {
-            let response = await axios.post("https://anbin-aravanaippi-arakkattalai-50034004215.development.catalystappsail.in/contact/submit", payload, {
-                withCredentials: true, // only if backend uses cookies
-                headers: { "Content-Type": "application/json" },
-            })
-            console.log(response)
-        } catch (error) {
-            console.log(error)
+            createdAt: finaldate,
         }
 
+        try {
+            await axios.post("https://welcoming-harmony-production-e8d2.up.railway.app/contact/submit", payload)
+        } catch (error) {
+            console.error("Error submitting form:", error)
+            alert("There was an error submitting the form. Please try again later.")
+            return
+        } finally {
+            setForm({ name: "", email: "", message: "", phone: "" })
+        }
         alert("Thank you! We received your message.")
-        setForm({ name: "", email: "", message: "", phone: "" })
     }
 
     return (
