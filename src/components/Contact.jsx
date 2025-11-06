@@ -72,7 +72,7 @@ const Contact = () => {
                             {/* Name */}
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label fw-bold">
-                                    Name
+                                    Nameeeeeeeeeeeeeeeeeeeee
                                 </label>
                                 <input type="text" id="name" name="name" className="form-control fw-bold" placeholder="Your name" value={form.name} onChange={handleChange} required />
                             </div>
