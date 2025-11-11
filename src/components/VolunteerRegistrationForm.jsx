@@ -97,7 +97,7 @@ const VolunteerRegistrationForm = () => {
         }
         // await axios.post("http://localhost:8080/volunteerRegistration", formDataToSend)
         toast.promise(
-            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/volunteerRegistration", {
+            fetch("https://anbin-aravanaippu-arakkattalai-50035756023.development.catalystappsail.in/volunteerRegistration", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),

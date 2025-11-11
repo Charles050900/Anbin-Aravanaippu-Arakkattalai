@@ -99,7 +99,7 @@ const RequestBloodForm = () => {
         }
         // axios.post("http://localhost:8080/bloodRequester", payload)
         toast.promise(
-            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/bloodRequester", {
+            fetch("https://anbin-aravanaippu-arakkattalai-50035756023.development.catalystappsail.in/bloodRequester", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),

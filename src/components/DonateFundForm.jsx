@@ -35,7 +35,7 @@ const DonateFundForm = () => {
         }
 
         toast.promise(
-            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/fundTransfer", {
+            fetch("https://anbin-aravanaippu-arakkattalai-50035756023.development.catalystappsail.in/fundTransfer", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
