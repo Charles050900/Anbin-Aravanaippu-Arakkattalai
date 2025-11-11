@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import "../CSS/DonateBloodForm.css"
 import blood_donate_image from "../assets/blood donation image wobg.png"
+import toast, { Toaster } from "react-hot-toast"
+import axios from "axios"
 
 const DonateBloodForm = () => {
     const [formData, setFormData] = useState({
@@ -18,9 +20,39 @@ const DonateBloodForm = () => {
         setFormData({ ...formData, [name]: type === "checkbox" ? checked : value })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        alert("Thank you for pledging to donate blood!")
+
+        let payload = {
+            bloodDonorName: formData.fullName,
+            bloodDonorAge: formData.age,
+            bloodGroup: formData.bloodGroup,
+            bloodDonorPhonoNo: formData.mobile,
+            bloodDonorEmail: formData.email,
+            bloodDonorDistrict: formData.district,
+            bloodDonoteContact: formData.agree,
+        }
+        // await axios.post("http://localhost:8080/bloodDonorRegistration", payload),
+        toast.promise(
+            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/bloodDonorRegistration", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            }),
+            {
+                loading: "Registering donor...",
+                success: (
+                    <b>
+                        Thank you for registering! <br /> Your willingness to donate can save lives.
+                    </b>
+                ),
+                error: (
+                    <b>
+                        Registration failed. <br /> Please try again after some time.
+                    </b>
+                ),
+            }
+        )
 
         setFormData({
             fullName: "",
@@ -105,7 +137,9 @@ const DonateBloodForm = () => {
             <div className="col-md-5 m-4 ">
                 <div className="card p-5  h-100 blood-donate-form">
                     <h4 className="mb-5 text-center text-danger fw-bold">Donor Registration Form</h4>
-
+                    <div>
+                        <Toaster />
+                    </div>
                     <form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col mb-3">
@@ -137,7 +171,7 @@ const DonateBloodForm = () => {
 
                         <div className="mb-3">
                             <label className="form-label">Mobile</label>
-                            <input type="text" name="mobile" value={formData.mobile} onChange={handleChange} className="form-control" required />
+                            <input type="text" name="mobile" maxLength={10} value={formData.mobile} onChange={handleChange} className="form-control" required />
                         </div>
 
                         <div className="mb-3">

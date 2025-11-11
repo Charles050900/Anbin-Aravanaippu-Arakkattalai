@@ -53,8 +53,8 @@ const Vision = () => {
             const windowHeight = window.innerHeight
 
             // Left element visibility
-            const leftTop = leftRef.current.getBoundingClientRect().top
-            if (leftTop < windowHeight - 50) setLeftVisible(true)
+            // const leftTop = leftRef.current.getBoundingClientRect().top
+            // if (leftTop < windowHeight - 50) setLeftVisible(true)
 
             // const rightTop = rightRef.current.getBoundingClientRect().top
             // if (rightTop < windowHeight - 50) setRightVisible(true)

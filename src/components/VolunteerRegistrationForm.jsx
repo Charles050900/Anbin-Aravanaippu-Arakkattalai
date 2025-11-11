@@ -7,6 +7,8 @@ import pic5 from "../assets/vision22.jpg"
 import pic6 from "../assets/vision24.jpg"
 import pic7 from "../assets/vision29.jpg"
 import "../CSS/VolunteerRegistraionForm.css"
+import toast, { Toaster } from "react-hot-toast"
+import axios from "axios"
 
 const VolunteerRegistrationForm = () => {
     const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7]
@@ -78,11 +80,42 @@ const VolunteerRegistrationForm = () => {
         setFormData({ ...formData, [name]: type === "checkbox" ? checked : value })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         console.log("Form submitted:", formData)
-        alert("Registration successful!")
+
+        let payload = {
+            volunteerName: formData.name,
+            volunteerAge: formData.age,
+            volunteerEmail: formData.email,
+            volunteerPhone: formData.phone,
+            volunteerDistrict: formData.district,
+            volunteerBloodGroup: formData.bloodGroup,
+            workTogether: formData.joinTrust,
+            bloodDonate: formData.bloodDonate,
+        }
+        // await axios.post("http://localhost:8080/volunteerRegistration", formDataToSend)
+        toast.promise(
+            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/volunteerRegistration", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            }),
+            {
+                loading: "Registering volunteer...",
+                success: (
+                    <b>
+                        Registration successful! <br /> Thank you for joining as a volunteer.
+                    </b>
+                ),
+                error: (
+                    <b>
+                        Registration failed. <br /> Please try again after some time.
+                    </b>
+                ),
+            }
+        )
 
         // Reset form
         setFormData({
@@ -110,6 +143,9 @@ const VolunteerRegistrationForm = () => {
                 {/* Right Side: Registration Form */}
                 <div className="col-md-7 mt-5 d-flex flex-column justify-content-center align-items-center ">
                     <div className="bg-white col-md-8 p-5 rounded-4 register-form ">
+                        <div>
+                            <Toaster />
+                        </div>
                         <h3 className="mb-5 text-center fw-bold">Volunteer Registration</h3>
                         <form onSubmit={handleSubmit} className=" ">
                             <div className="mb-3">
@@ -126,7 +162,7 @@ const VolunteerRegistrationForm = () => {
                             </div>
                             <div className="mb-3 ">
                                 <label className="form-label fw-semibold">Phone</label>
-                                <input type="tel" name="phone" className="form-control" value={formData.phone} onChange={handleChange} required pattern="[0-9]{10}" />
+                                <input type="tel" name="phone" className="form-control" maxLength={10} value={formData.phone} onChange={handleChange} required pattern="[0-9]{10}" />
                             </div>
                             <div className="mb-3 ">
                                 <label className="form-label fw-semibold">District</label>

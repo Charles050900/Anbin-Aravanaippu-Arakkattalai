@@ -5,6 +5,7 @@ import { height } from "@fortawesome/free-brands-svg-icons/faChromecast"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from "react-router-dom"
+import toast, { Toaster } from "react-hot-toast"
 const DonateFundForm = () => {
     const [formData, setFormData] = useState({
         transactionId: "",
@@ -24,7 +25,35 @@ const DonateFundForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        window.alert("Form submitted successfully!")
+
+        let payload = {
+            transactionNo: formData.transactionId,
+            transactionAmount: formData.amount,
+            payerName: formData.payerName,
+            payerPhoneNo: formData.contactNo,
+            payerMessage: formData.message,
+        }
+
+        toast.promise(
+            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/fundTransfer", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            }),
+            {
+                loading: "Sending details...",
+                success: (
+                    <b>
+                        Thank you for your donation! <br /> We appreciate your support.
+                    </b>
+                ),
+                error: (
+                    <b>
+                        Submission failed. <br /> Please try again later.
+                    </b>
+                ),
+            }
+        )
 
         setFormData({
             transactionId: "",
@@ -34,15 +63,15 @@ const DonateFundForm = () => {
             message: "",
         })
     }
-    let navigate = useNavigate()
 
-    let fundProviousPage = () => {
-        navigate(-1)
-    }
     return (
         <div className="donate-funds-form p-5 d-flex flex-column justify-content-evenly align-items-center gap-5">
             <div className="card p-5 rounded-4 shadow-lg">
                 <h3 className="mb-4 text-center fw-bold">How Our Trusts Use Donated Funds</h3>
+                <div>
+                    <Toaster />
+                </div>
+
                 <p className="mb-4 fw-bold text-center ">
                     When you donate to our trust, your contribution can support many meaningful initiatives. <br />
                     Here are some common areas where funds are used:
@@ -103,23 +132,23 @@ const DonateFundForm = () => {
                     <h3 className="mb-5 text-center fw-bold">Bank Transaction Details</h3>
                     <form onSubmit={handleSubmit} autoComplete="off">
                         <div className="mb-3">
-                            <input type="text" className="form-control" id="transactionId" placeholder="Enter Transaction ID" value={formData.transactionId} onChange={handleChange} required />
+                            <input type="text" className="form-control" id="transactionId" placeholder="Transaction Number" value={formData.transactionId} onChange={handleChange} required />
                         </div>
 
                         <div className="mb-3">
-                            <input type="text" className="form-control" id="amount" placeholder="Enter Amount" value={formData.amount} onChange={handleChange} required />
+                            <input type="text" className="form-control" id="amount" placeholder="Amount" value={formData.amount} onChange={handleChange} required />
                         </div>
 
                         <div className="mb-3">
-                            <input type="text" className="form-control" id="payerName" placeholder="Enter Name of Payer" value={formData.payerName} onChange={handleChange} required />
+                            <input type="text" className="form-control" id="payerName" placeholder="Name of Payer" value={formData.payerName} onChange={handleChange} required />
                         </div>
 
                         <div className="mb-3">
-                            <input type="tel" className="form-control" id="contactNo" placeholder="Enter Contact Number" value={formData.contactNo} onChange={handleChange} required />
+                            <input type="tel" className="form-control" id="contactNo" placeholder="Contact Number" value={formData.contactNo} onChange={handleChange} required />
                         </div>
 
                         <div className="mb-3">
-                            <textarea className="form-control fixed-textarea" id="message" placeholder="Enter your message" value={formData.message} onChange={handleChange} required />
+                            <textarea className="form-control fixed-textarea" id="message" placeholder="Write your query or message" value={formData.message} onChange={handleChange} required />
                         </div>
 
                         <div className="d-flex justify-content-center">

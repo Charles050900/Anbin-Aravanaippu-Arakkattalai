@@ -4,6 +4,7 @@ import title from "../assets/Contact.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faLocationDot, faPhoneVolume } from "@fortawesome/free-solid-svg-icons"
 import axios from "axios"
+import toast, { Toaster } from "react-hot-toast"
 
 const Contact = () => {
     const [form, setForm] = useState({
@@ -27,38 +28,41 @@ const Contact = () => {
             alert("Please fill in all fields.")
             return
         }
-        const d = new Date()
-
-        const pad = (n) => String(n).padStart(2, "0")
-
-        const day = pad(d.getDate())
-        const month = pad(d.getMonth() + 1) // months are 0-indexed
-        const year = d.getFullYear()
-
-        const hours = pad(d.getHours())
-        const minutes = pad(d.getMinutes())
-        const seconds = pad(d.getSeconds())
-
-        const finaldate = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`
 
         let payload = {
             senderName: form.name,
             senderEmail: form.email,
             senderPhoneNo: form.phone,
             senderMessage: form.message,
-            createdAt: finaldate,
         }
+        // await axios.post("http://localhost:8080/sendMessage", payload)
+        toast.promise(
+            fetch("https://anbin-aravanaippu-arakkattalai-50034377645.development.catalystappsail.in/sendMessage", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            }),
+            {
+                loading: "Sending your message...",
+                success: (
+                    <b>
+                        Message sent successfully! <br /> We wll get back to you soon.
+                    </b>
+                ),
+                error: (
+                    <b>
+                        Failed to send message. <br /> Please try again later.
+                    </b>
+                ),
+            }
+        )
 
-        try {
-            await axios.post("https://welcoming-harmony-production-e8d2.up.railway.app/contact/submit", payload)
-        } catch (error) {
-            console.error("Error submitting form:", error)
-            alert("There was an error submitting the form. Please try again later.")
-            return
-        } finally {
-            setForm({ name: "", email: "", message: "", phone: "" })
-        }
-        alert("Thank you! We received your message.")
+        setForm({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+        })
     }
 
     return (
@@ -66,13 +70,17 @@ const Contact = () => {
             <img src={title} alt="" className="contact-title mb-5" />
             {/* <h2 className="text-center mb-5 fw-bold text-white">Contact Us</h2> */}
             <div className=" w-100">
+                <div>
+                    <Toaster />
+                </div>
+
                 <div className="row gap-lg-3 gap-md-3 justify-content-center">
                     <div className="col-md-8 col-lg-4 p-lg-5 form-outer  d-flex justify-content-center">
                         <form className="form  mt-5 p-4 w-75">
                             {/* Name */}
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label fw-bold">
-                                    Nameeeeeeeeeeeeeeeeeeeee
+                                    Name
                                 </label>
                                 <input type="text" id="name" name="name" className="form-control fw-bold" placeholder="Your name" value={form.name} onChange={handleChange} required />
                             </div>
