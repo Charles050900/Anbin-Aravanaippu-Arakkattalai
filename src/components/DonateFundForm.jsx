@@ -144,7 +144,7 @@ const DonateFundForm = () => {
                         </div>
 
                         <div className="mb-3">
-                            <input type="tel" className="form-control" id="contactNo" placeholder="Contact Number" value={formData.contactNo} onChange={handleChange} required />
+                            <input type="tel" className="form-control" id="contactNo" maxLength={10} placeholder="Contact Number" value={formData.contactNo} onChange={handleChange} required />
                         </div>
 
                         <div className="mb-3">
