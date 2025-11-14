@@ -93,6 +93,7 @@ const RequestBloodForm = () => {
         let payload = {
             bloodRequesterName: formData.name,
             bloodRequesterPhoneNo: formData.phone,
+            bloodRequesterGender: formData.gender,
             bloodRequestReason: formData.reason,
             bloodGroup: formData.bloodType,
             bloodRequesterDistrict: formData.district,
