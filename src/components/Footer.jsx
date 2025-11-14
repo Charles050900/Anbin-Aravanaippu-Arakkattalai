@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/Anbin Aravanaippu Arakkattalai Logo.png" // replace with your NGO logo
+import logo from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
 import "../CSS/Footer.css"
 const Footer = ({ scrollToSection, refs }) => {
     return (
@@ -12,7 +12,6 @@ const Footer = ({ scrollToSection, refs }) => {
                             <img src={logo} alt="NGO Logo" className="footer-logo" style={{ width: "50px", marginRight: "10px" }} />
                             <span className="fw-bolder fst-italic ">அன்பின் அரவணைப்பு அறக்கட்டளை</span>
                         </div>
-
                     </div>
 
                     {/* Links */}
