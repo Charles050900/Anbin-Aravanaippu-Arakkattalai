@@ -1,6 +1,6 @@
 import React from "react"
 import title from "../assets/Organisers.png"
-import pic from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
+import pic from "../assets/AnbinAravanaippuArakkattalaiLogo.png"
 import "../CSS/Volunteer.css"
 
 const Volunteer1 = () => {

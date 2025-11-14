@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
+import logo from "../assets/AnbinAravanaippuArakkattalaiLogo.png"
 const DonateFooter = () => {
     return (
         <footer className="py-4 footer text-white ">

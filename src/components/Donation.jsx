@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import "../CSS/Donation.css"
 import title from "../assets/Donate.png"
-import bank_transfer from "../assets/bank_transfer.jpg"
-import blood_donate from "../assets/blood_donate.jpg"
-import blood_request from "../assets/blood_request.jpg"
+import bank_transfer from "../assets/banktransfer.jpg"
+import blood_donate from "../assets/blooddonate.jpg"
+import blood_request from "../assets/bloodrequest.jpg"
 import { useNavigate } from "react-router-dom"
 
 const Donation = () => {

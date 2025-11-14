@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import BoardMemberitle from "../assets/Board_Members.png"
+import BoardMemberitle from "../assets/BoardMembers.png"
 import { useNavigate } from "react-router-dom"
 
 const Volunteer2 = () => {

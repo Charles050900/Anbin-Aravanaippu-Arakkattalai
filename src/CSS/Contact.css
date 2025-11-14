@@ -13,7 +13,7 @@
 .address-details {
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.795);
     transition: all 0.3s ease-in-out;
-    background: url("../assets/address-bg1.png");
+    background: url("../assets/addressbg1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +40,7 @@
     }
 }
 .form-outer {
-    background: url("../assets/form-bg.jpeg");
+    background: url("../assets/formbg.jpeg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

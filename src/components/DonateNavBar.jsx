@@ -2,7 +2,7 @@ import React from "react"
 import Vortex from "./Vortex"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faArrowUp } from "@fortawesome/free-solid-svg-icons"
-import logo from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
+import logo from "../assets/AnbinAravanaippuArakkattalaiLogo.png"
 import { useNavigate } from "react-router-dom"
 
 const DonateNavBar = () => {

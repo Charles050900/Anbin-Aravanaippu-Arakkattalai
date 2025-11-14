@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
+import logo from "../assets/AnbinAravanaippuArakkattalaiLogo.png"
 import "../CSS/Footer.css"
 const Footer = ({ scrollToSection, refs }) => {
     return (

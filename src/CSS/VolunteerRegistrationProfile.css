@@ -1,6 +1,6 @@
-.volunteer-register-profile{
+.volunteer-register-profile {
     height: 89vh;
-    background: url("../assets/carousel-3.jpg");
+    background: url("../assets/carousel3.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,10 +8,9 @@
     height: 95vh;
     background-attachment: fixed;
 }
-.register-title{
-   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.947);
+.register-title {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.947);
 }
-.register-content{
-       text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.947);
-
+.register-content {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.947);
 }

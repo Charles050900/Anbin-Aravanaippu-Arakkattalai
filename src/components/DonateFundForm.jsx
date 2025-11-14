@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../CSS/DonateFundsForm.css"
-import donation_pic from "../assets/donation_pic_wobg.png"
+import donation_pic from "../assets/donationpicwobg.png"
 import { height } from "@fortawesome/free-brands-svg-icons/faChromecast"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"

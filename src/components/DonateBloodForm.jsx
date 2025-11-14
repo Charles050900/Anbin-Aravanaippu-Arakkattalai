@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../CSS/DonateBloodForm.css"
-import blood_donate_image from "../assets/blood_donation_image _wobg.png"
+import blood_donate_image from "../assets/blooddonationimagewobg.png"
 import toast, { Toaster } from "react-hot-toast"
 import axios from "axios"
 
