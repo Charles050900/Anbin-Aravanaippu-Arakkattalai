@@ -1,17 +1,13 @@
 .details {
     height: 100vh;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
     padding: 25% 5%;
-    /* background: linear-gradient(to bottom, rgb(87, 168, 249), white, white, white, white, rgb(87, 168, 249)); */
 }
 
 .details > .details-left {
-    /* position: relative; */
-    /* border: 2px solid green; */
     flex-basis: 50%;
     height: auto;
     display: flex;
@@ -27,17 +23,9 @@
     border: 5px ridge rgb(1, 91, 181);
     padding: 10px;
     width: 100%;
-    /* margin-top: 60px; */
-    /* height: 100%; */
-    /* background: url("../assets//Anbin Aravanaippu Arakkattalai Logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
-}
-/* .details > .details-left > table > tbody > tr{
 
-    backdrop-filter: blur(90px);
-} */
+}
+
 .details > .details-left > table > tbody > tr > td {
     width: 50%;
     border: 1px ridge rgb(1, 91, 181);
@@ -46,13 +34,10 @@
 
 .details > .details-left > table > tbody > tr > td > ul {
     list-style: outside;
-    /* margin-left: 20px; */
 }
 .details > .details-right {
-    /* border: 2px solid blue; */
     flex-basis: 50%;
     height: auto;
-    /* padding: 2%; */
     display: flex;
     justify-content: center;
     align-items: flex-start;

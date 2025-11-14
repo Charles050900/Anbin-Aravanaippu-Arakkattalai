@@ -23,13 +23,11 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.949);
 }
 
-/* Change checkmark and background when checked */
 .register-check:checked {
   background-color: dodgerblue; /* red background */
   border-color: dodgerblue;     /* red border */
 }
 
-/* Optional: hover effect */
 .register-check:hover {
   border-color: dodgerblue;
 }

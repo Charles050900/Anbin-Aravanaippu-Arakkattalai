@@ -7,24 +7,19 @@
 
 .sec-1 > ol {
     font-family: "Mukta_Malar_bold";
-    /* backdrop-filter: blur(200px); */
 }
 
 .sec-2 > ol {
     font-family: "Mukta_Malar_bold";
-    /* backdrop-filter: blur(200px); */
 }
 .mission-pic-1 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.575);
-    /* filter: drop-shadow(0px 0px 0px gold); */
     transition: all 0.3s ease;
     &:hover {
         transform: scale(1.07);
     }
 }
 .mission-pic-2 {
-    /* width: 300px;     */
-
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.945);
     transition: all 0.3s ease-in-out;
     &:hover {

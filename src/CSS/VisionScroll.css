@@ -8,7 +8,6 @@
 .scroll-track {
   display: flex;
   gap: 20px;
-  /* no CSS animation; JS handles the seamless scroll */
 }
 
 .scroll-track img {
