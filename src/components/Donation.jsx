@@ -11,15 +11,15 @@ const Donation = () => {
 
     const goToDonateFunds = () => {
         sessionStorage.setItem("fundScrollY", window.scrollY)
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Funds") // or whatever route you use
+        navigate("/Donate-Funds") // or whatever route you use
     }
     const goToDonateBlood = () => {
         sessionStorage.setItem("fundScrollY", window.scrollY)
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Donate-Blood") // or whatever route you use
+        navigate("/Donate-Blood") // or whatever route you use
     }
     const goToRequestBlood = () => {
         sessionStorage.setItem("fundScrollY", window.scrollY)
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Request-Blood") // or whatever route you use
+        navigate("/Request-Blood") // or whatever route you use
     }
     return (
         <div className="donate row">

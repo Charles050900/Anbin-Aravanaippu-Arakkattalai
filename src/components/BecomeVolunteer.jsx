@@ -2,13 +2,12 @@ import React from "react"
 import memberpic from "..//assets/volunteers.jpg"
 import { useNavigate } from "react-router-dom"
 
-
 const BecomeVolunteer = () => {
     let navigate = useNavigate()
 
     const goToVolunteerform = () => {
         sessionStorage.setItem("fundScrollY", window.scrollY)
-        navigate("/Anbin-Aravanaippu-Arakkattalai/Volunteer-Registration") // or whatever route you use
+        navigate("/Volunteer-Registration") // or whatever route you use
     }
     return (
         <div className=" d-lg-flex justify-content-lg-center p-5 register-member-form">

@@ -17,11 +17,11 @@ function App() {
             <BrowserRouter>
                 <ScrollToTop />
                 <Routes>
-                    <Route path="/Anbin-Aravanaippu-Arakkattalai" element={<Home />} />
-                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Donate-Funds" element={<DonateFunds />} />
-                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Donate-Blood" element={<DonateBlood />} />
-                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Request-Blood" element={<RequestBlood />} />
-                    <Route path="/Anbin-Aravanaippu-Arakkattalai/Volunteer-Registration" element={<VolunteerRegistration />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/Donate-Funds" element={<DonateFunds />} />
+                    <Route path="/Donate-Blood" element={<DonateBlood />} />
+                    <Route path="/Request-Blood" element={<RequestBlood />} />
+                    <Route path="/Volunteer-Registration" element={<VolunteerRegistration />} />
                 </Routes>
             </BrowserRouter>
         </>
