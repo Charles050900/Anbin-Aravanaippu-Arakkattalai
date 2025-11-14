@@ -33,3 +33,8 @@
 .register-check:hover {
   border-color: dodgerblue;
 }
+
+
+.register-radio{
+  accent-color: dodgerblue;
+}

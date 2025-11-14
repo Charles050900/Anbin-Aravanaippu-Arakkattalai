@@ -25,6 +25,7 @@ const VolunteerRegistrationForm = () => {
     const [formData, setFormData] = useState({
         name: "",
         age: "",
+        gender: "",
         email: "",
         phone: "",
         district: "",
@@ -88,6 +89,7 @@ const VolunteerRegistrationForm = () => {
         let payload = {
             volunteerName: formData.name,
             volunteerAge: formData.age,
+            volunteerGender: formData.gender,
             volunteerEmail: formData.email,
             volunteerPhone: formData.phone,
             volunteerDistrict: formData.district,
@@ -121,6 +123,7 @@ const VolunteerRegistrationForm = () => {
         setFormData({
             name: "",
             age: "",
+            gender: "",
             email: "",
             phone: "",
             district: "",
@@ -142,7 +145,7 @@ const VolunteerRegistrationForm = () => {
 
                 {/* Right Side: Registration Form */}
                 <div className="col-md-7 mt-5 d-flex flex-column justify-content-center align-items-center ">
-                    <div className="bg-white col-md-8 p-5 rounded-4 register-form ">
+                    <div className="bg-white col-md-8 p-lg-5 p-3    rounded-4 register-form ">
                         <div>
                             <Toaster />
                         </div>
@@ -156,6 +159,47 @@ const VolunteerRegistrationForm = () => {
                                 <label className="form-label fw-semibold">Age</label>
                                 <input type="text" name="age" className="form-control" value={formData.age} onChange={handleChange} required min="18" />
                             </div>
+                            <div className="mb-3">
+                                <label className="form-label fw-semibold">Gender</label>
+                                <div className=" d-flex gap-5 align-items-center">
+                                    <label className=" d-flex gap-1">
+                                        <input
+                                            type="radio"
+                                            name="gender"
+                                            value="Male"
+                                            className="register-radio"
+                                            checked={formData.gender === "Male"}
+                                            onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                        />
+                                        Male
+                                    </label>
+
+                                    <label className="d-flex gap-1">
+                                        <input
+                                            type="radio"
+                                            name="gender"
+                                            value="Female"
+                                            className="register-radio"
+                                            checked={formData.gender === "Female"}
+                                            onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                        />
+                                        Female
+                                    </label>
+
+                                    <label className=" d-flex gap-1">
+                                        <input
+                                            type="radio"
+                                            name="gender"
+                                            value="Other"
+                                            className="register-radio"
+                                            checked={formData.gender === "Other"}
+                                            onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                        />
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+
                             <div className="mb-3 ">
                                 <label className="form-label fw-semibold">Email</label>
                                 <input type="email" name="email" className="form-control" value={formData.email} onChange={handleChange} required />

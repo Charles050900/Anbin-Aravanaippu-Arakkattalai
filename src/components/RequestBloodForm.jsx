@@ -74,6 +74,7 @@ const RequestBloodForm = () => {
         name: "",
         phone: "",
         reason: "",
+        gender: "",
         bloodType: "",
         district: "",
         place: "",
@@ -87,6 +88,7 @@ const RequestBloodForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        console.log(formData)
 
         let payload = {
             bloodRequesterName: formData.name,
@@ -119,6 +121,7 @@ const RequestBloodForm = () => {
             name: "",
             phone: "",
             reason: "",
+            gender: "",
             bloodType: "",
             district: "",
             place: "",
@@ -150,24 +153,24 @@ const RequestBloodForm = () => {
                 <div>
                     <Toaster />
                 </div>
-                <form onSubmit={handleSubmit} className="p-2  shadow-sm col-lg-4">
+                <form onSubmit={handleSubmit} className="p-5  shadow-sm col-lg-4 request-form ">
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Name</label>
+                        <label className="form-label ">Name</label>
                         <input type="text" name="name" className="form-control" value={formData.name} onChange={handleChange} placeholder="Enter your full name" required />
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Phone</label>
+                        <label className="form-label  ">Phone</label>
                         <input type="tel" name="phone" maxLength={10} className="form-control" value={formData.phone} onChange={handleChange} placeholder="Enter your phone number" required />
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Reason</label>
+                        <label className="form-label  ">Reason</label>
                         <textarea name="reason" className="form-control" rows="3" value={formData.reason} onChange={handleChange} placeholder="Enter the reason for request"></textarea>
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Blood Type</label>
+                        <label className="form-label  ">Blood Type</label>
                         <select name="bloodType" className="form-select" value={formData.bloodType} onChange={handleChange} required>
                             <option value="">Select blood type</option>
                             <option value="A+">A+</option>
@@ -180,9 +183,49 @@ const RequestBloodForm = () => {
                             <option value="O-">O-</option>
                         </select>
                     </div>
+                    <div className="mb-3">
+                        <label className="form-label fw-semibold">Gender</label>
+                        <div className=" d-flex gap-3 gap-lg-5 align-items-center">
+                            <label className=" d-flex gap-1">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                    className="request-radio"
+                                    checked={formData.gender === "Male"}
+                                    onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                />
+                                Male
+                            </label>
+
+                            <label className="d-flex gap-1">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                    className="request-radio"
+                                    checked={formData.gender === "Female"}
+                                    onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                />
+                                Female
+                            </label>
+
+                            <label className=" d-flex gap-1">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                    className="request-radio"
+                                    checked={formData.gender === "Other"}
+                                    onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                />
+                                Other
+                            </label>
+                        </div>
+                    </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">District</label>
+                        <label className="form-label  ">District</label>
                         <select name="district" className="form-select" value={formData.district} onChange={handleChange} required>
                             <option value="">Select your district</option>
                             {districts.map((district, index) => (
@@ -194,17 +237,17 @@ const RequestBloodForm = () => {
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Place</label>
+                        <label className="form-label ">Place</label>
                         <input type="text" name="place" className="form-control" value={formData.place} onChange={handleChange} placeholder="Enter place or hospital name" required />
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label fw-bold text-white">Date</label>
+                        <label className="form-label  ">Date</label>
                         <input type="date" name="date" className="form-control" value={formData.date} onChange={handleChange} required />
                     </div>
 
                     <div className="text-center">
-                        <button type="submit" className="btn btn-danger px-4">
+                        <button type="submit" className="btn btn-success px-4">
                             Submit
                         </button>
                     </div>

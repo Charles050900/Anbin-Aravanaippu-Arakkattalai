@@ -8,6 +8,7 @@ const DonateBloodForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         age: "",
+        gender: "",
         bloodGroup: "",
         mobile: "",
         email: "",
@@ -21,11 +22,14 @@ const DonateBloodForm = () => {
     }
 
     const handleSubmit = async (e) => {
+        console.log(formData)
+
         e.preventDefault()
 
         let payload = {
             bloodDonorName: formData.fullName,
             bloodDonorAge: formData.age,
+            bloodDonorGender: formData.gender,
             bloodGroup: formData.bloodGroup,
             bloodDonorPhonoNo: formData.mobile,
             bloodDonorEmail: formData.email,
@@ -57,6 +61,7 @@ const DonateBloodForm = () => {
         setFormData({
             fullName: "",
             age: "",
+            gender: "",
             bloodGroup: "",
             mobile: "",
             email: "",
@@ -153,6 +158,7 @@ const DonateBloodForm = () => {
                                 <label className="form-label">Age</label>
                                 <input type="text" name="age" value={formData.age} onChange={handleChange} className="form-control" required />
                             </div>
+
                             <div className="col-md-6 mb-3">
                                 <label className="form-label">Blood Group</label>
                                 <select name="bloodGroup" value={formData.bloodGroup} onChange={handleChange} className="form-select" required>
@@ -166,6 +172,46 @@ const DonateBloodForm = () => {
                                     <option>AB+</option>
                                     <option>AB-</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label fw-semibold">Gender</label>
+                            <div className=" d-flex gap-3 gap-lg-5 align-items-center">
+                                <label className=" d-flex gap-1">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Male"
+                                        className="donote-radio"
+                                        checked={formData.gender === "Male"}
+                                        onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                    />
+                                    Male
+                                </label>
+
+                                <label className="d-flex gap-1">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Female"
+                                        className="donote-radio"
+                                        checked={formData.gender === "Female"}
+                                        onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                    />
+                                    Female
+                                </label>
+
+                                <label className=" d-flex gap-1">
+                                    <input
+                                        type="radio"
+                                        name="gender"
+                                        value="Other"
+                                        className="donote-radio"
+                                        checked={formData.gender === "Other"}
+                                        onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                                    />
+                                    Other
+                                </label>
                             </div>
                         </div>
 
