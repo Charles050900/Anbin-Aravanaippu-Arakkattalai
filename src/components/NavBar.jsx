@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import logo from "../assets/Anbin Aravanaippu Arakkattalai Logo.png"
+import logo from "../assets/Anbin_Aravanaippu_Arakkattalai_Logo.png"
 import "../CSS/NavBar.css"
 import Vortex from "./Vortex"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
